@@ -10,10 +10,9 @@ import Layout from '@/shared/DefaultLayout.vue'
         <Heading>Auto-hébergement</Heading>
 
         <p>
-          J'héberge depuis chez moi plusieurs services comme Nextcloud, Vaultwarden ou encore ce
-          site Internet. Pour ce faire, j'ai mis en place un tunnel SSL avec CloudFlare, un
-          <i>reverse proxy</i> avec Nginx Proxy Manager où j'expose chacun de mes services, qui sont
-          tous dans des conteneurs Docker.
+          J'héberge chez moi plusieurs services comme Nextcloud, Immich ou encore Pihole, qui sont
+          tous isolés dans leur conteneur Docker respectif. J'utilise le VPN Tailscale pour accéder
+          à ces services depuis l'extérieur.
         </p>
 
         <div>

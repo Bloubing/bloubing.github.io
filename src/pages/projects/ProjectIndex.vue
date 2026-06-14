@@ -13,8 +13,14 @@ import { RouterLink } from 'vue-router'
         <ul class="flex flex-col space-y-3 text-base sm:text-xl">
           <li>
             -
+            <RouterLink to="/projects/monespace" class="hover:underline text-blue-500"
+              >Mon Espace</RouterLink
+            >
+          </li>
+          <li>
+            -
             <RouterLink to="/projects/innovguide" class="hover:underline text-blue-500"
-              >Stage Innovguide</RouterLink
+              >Innovguide</RouterLink
             >
           </li>
           <li>

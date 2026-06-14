@@ -1,6 +1,7 @@
 import AboutPage from '@/pages/AboutPage.vue'
 import HomePage from '@/pages/HomePage.vue'
 import ProjectIndex from '@/pages/projects/ProjectIndex.vue'
+import ProjectMonEspace from '@/pages/projects/ProjectMonEspace.vue'
 import ProjectInnovGuide from '@/pages/projects/ProjectInnovGuide.vue'
 import ProjectPersonalWebsite from '@/pages/projects/ProjectPersonalWebsite.vue'
 import ProjectRecipes from '@/pages/projects/ProjectRecipes.vue'
@@ -26,6 +27,12 @@ const router = createRouter({
       name: 'projects.recipes',
       component: ProjectRecipes,
       meta: { title: 'Recettes' },
+    },
+    {
+      path: '/projects/monespace',
+      name: 'projects.monespace',
+      meta: { title: 'Mon Espace' },
+      component: ProjectMonEspace,
     },
     {
       path: '/projects/innovguide',
