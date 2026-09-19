@@ -14,8 +14,8 @@ import Layout from '../shared/DefaultLayout.vue'
 
         <h3 class="text-lg font-bold sm:text-xl">Et à part ça ?</h3>
         <p>
-          Si je ne suis pas devant l'ordinateur, vous me trouverez sûrement dehors, en train de
-          faire du sport. Mes sports du moment ? La callisthénie, le vélo et la course à pied.
+          Si je ne suis pas devant l'ordinateur, je suis sûrement dehors, en train de faire du
+          sport. Mes sports du moment ? La callisthénie, le vélo et la course à pied.
         </p>
 
         <h3 class="text-lg font-bold sm:text-xl">Une opportunité ? Une question ?</h3>

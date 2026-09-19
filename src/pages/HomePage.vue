@@ -38,15 +38,15 @@ import Layout from '@/shared/DefaultLayout.vue'
         <ul>
           <ProjectCard to="/experiences/django-angular-internship">
             <template v-slot:title>Développeur full-stack</template>
-            M2<br />
-            février 2026 - juillet 2026<br />
-            Stage : Un espace client avec Django et Angular.
+            <p>Stage M2</p>
+            <p>février 2026 - juillet 2026</p>
+            <p>Un espace client avec Django et Angular.</p>
           </ProjectCard>
           <ProjectCard to="/experiences/laravel-internship">
             <template v-slot:title>Développeur Laravel</template>
-            M1<br />
-            juillet 2025 - septembre 2025<br />
-            Stage : Un PMS avec Laravel et Livewire.
+            <p>Stage M1</p>
+            <p>juillet 2025 - septembre 2025</p>
+            <p>Un PMS avec Laravel et Livewire.</p>
           </ProjectCard>
         </ul>
       </section>
