@@ -1,10 +1,12 @@
 import AboutPage from '@/pages/AboutPage.vue'
 import HomePage from '@/pages/HomePage.vue'
+import ExperienceIndex from '@/pages/experiences/ExperienceIndex.vue'
+import ExperienceDjangoAngularInternship from '@/pages/experiences/ExperienceDjangoAngularInternship.vue'
+import ExperienceLaravelInternship from '@/pages/experiences/ExperienceLaravelInternship.vue'
 import ProjectIndex from '@/pages/projects/ProjectIndex.vue'
-import ProjectMonEspace from '@/pages/projects/ProjectMonEspace.vue'
-import ProjectInnovGuide from '@/pages/projects/ProjectInnovGuide.vue'
 import ProjectRecipes from '@/pages/projects/ProjectRecipes.vue'
 import ProjectSelfHosting from '@/pages/projects/ProjectSelfHosting.vue'
+import ProjectTron from '@/pages/projects/ProjectTron.vue'
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 const router = createRouter({
@@ -14,6 +16,24 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomePage,
+    },
+    {
+      path: '/experiences',
+      name: 'experiences.index',
+      component: ExperienceIndex,
+      meta: { title: 'Expériences' },
+    },
+    {
+      path: '/experiences/django-angular-internship',
+      name: 'experiences.django-angular-internship',
+      meta: { title: 'Stage Django Angular' },
+      component: ExperienceDjangoAngularInternship,
+    },
+    {
+      path: '/experiences/laravel-internship',
+      name: 'experiences.laravel-internship',
+      meta: { title: 'Stage Laravel' },
+      component: ExperienceLaravelInternship,
     },
     {
       path: '/projects',
@@ -28,22 +48,16 @@ const router = createRouter({
       meta: { title: 'Recettes' },
     },
     {
-      path: '/projects/monespace',
-      name: 'projects.monespace',
-      meta: { title: 'Mon Espace' },
-      component: ProjectMonEspace,
-    },
-    {
-      path: '/projects/innovguide',
-      name: 'projects.innovguide',
-      meta: { title: 'InnovGuide' },
-      component: ProjectInnovGuide,
-    },
-    {
       path: '/projects/self-hosting',
       name: 'projects.self_hosting',
       meta: { title: 'Auto-hébergement' },
       component: ProjectSelfHosting,
+    },
+    {
+      path: '/projects/tron',
+      name: 'projects.tron',
+      meta: { title: 'Jeu TRON' },
+      component: ProjectTron,
     },
     {
       path: '/about',

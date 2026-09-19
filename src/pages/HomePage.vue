@@ -9,9 +9,7 @@ import Layout from '@/shared/DefaultLayout.vue'
     <section aria-label="introduction" class="px-4 py-20 text-gray-800 sm:px-8 md:py-32">
       <h1 class="text-center text-4xl font-bold sm:text-5xl md:text-6xl lg:text-6xl">Bloubing</h1>
       <div class="mx-auto flex max-w-3xl flex-col items-center text-center">
-        <p class="mt-5 max-w-[50ch] sm:text-lg lg:text-xl">
-          Étudiant en informatique qui aime le développement Web et les langues
-        </p>
+        <p class="mt-5 max-w-[50ch] sm:text-lg lg:text-xl">Développeur Web qui aime les langues</p>
         <div class="relative mt-10 flex">
           <RouterLink
             to="/projects"
@@ -34,17 +32,40 @@ import Layout from '@/shared/DefaultLayout.vue'
             id="technologies-heading"
             class="bg-gray-800 px-4 py-2 text-base font-bold text-white sm:text-4xl"
           >
+            Expériences
+          </h2>
+        </div>
+        <ul>
+          <ProjectCard to="/experiences/django-angular-internship">
+            <template v-slot:title>Développeur full-stack</template>
+            M2<br />
+            février 2026 - juillet 2026<br />
+            Stage : Un espace client avec Django et Angular.
+          </ProjectCard>
+          <ProjectCard to="/experiences/laravel-internship">
+            <template v-slot:title>Développeur Laravel</template>
+            M1<br />
+            juillet 2025 - septembre 2025<br />
+            Stage : Un PMS avec Laravel et Livewire.
+          </ProjectCard>
+        </ul>
+      </section>
+    </div>
+
+    <div>
+      <section aria-labelledby="projects-heading">
+        <div class="mx-4">
+          <h2
+            id="technologies-heading"
+            class="bg-gray-800 px-4 py-2 text-base font-bold text-white sm:text-4xl"
+          >
             Sélection de projets
           </h2>
         </div>
         <ul>
-          <ProjectCard to="/projects/monespace">
-            <template v-slot:title>Mon Espace</template>
-            Un espace client avec Django et Angular.
-          </ProjectCard>
-          <ProjectCard to="/projects/innovguide">
-            <template v-slot:title>InnovGuide</template>
-            Un PMS avec Laravel, Livewire et Vue.
+          <ProjectCard to="/projects/tron">
+            <template v-slot:title>Jeu TRON</template>
+            Un jeu TRON multijoueur.
           </ProjectCard>
           <ProjectCard to="/projects/self-hosting">
             <template v-slot:title>Auto-hébergement</template>

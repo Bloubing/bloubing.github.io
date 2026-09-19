@@ -92,6 +92,11 @@ onBeforeUnmount(() => {
             <li
               class="w-full p-6 px-15 transition duration-300 hover:bg-gray-800 hover:text-white md:w-auto md:p-0 md:hover:bg-transparent md:hover:text-gray-800"
             >
+              <NavLink to="/experiences">Expériences</NavLink>
+            </li>
+            <li
+              class="w-full p-6 px-15 transition duration-300 hover:bg-gray-800 hover:text-white md:w-auto md:p-0 md:hover:bg-transparent md:hover:text-gray-800"
+            >
               <NavLink to="/projects">Projets</NavLink>
             </li>
             <li
@@ -141,8 +146,13 @@ onBeforeUnmount(() => {
         >
           Contactez-moi !
         </h2>
+        <p class="text-gray-800 font-normal py-4 max-w-[50ch]">
+          Vous avez un projet qui touche au développement, à la communication digitale ou aux
+          langues ? Ou bien simplement une question ? Je suis ouvert à de nouvelles opportunités et
+          je serai ravi d'en discuter avec vous !
+        </p>
         <div
-          class="transition-tranform rounded-full pt-4 text-white duration-300 hover:rotate-3 md:pt-10 md:hover:rotate-1"
+          class="transition-tranform rounded-full text-white duration-300 hover:rotate-3 md:hover:rotate-1"
         >
           <a
             type="email"

@@ -15,9 +15,7 @@ defineProps({
         <div class="flex flex-col justify-between space-y-6 p-4 md:flex-10">
           <div class="group space-y-2">
             <header class="flex space-x-2">
-              <h2
-                class="text-base font-semibold tracking-wide group-hover:underline sm:text-2xl sm:text-xl"
-              >
+              <h2 class="text-base font-semibold tracking-wide group-hover:underline sm:text-2xl">
                 <slot name="title" />
               </h2>
             </header>

@@ -4,20 +4,19 @@ import Layout from '@/shared/DefaultLayout.vue'
 </script>
 
 <template>
-  <Layout back="/projects">
+  <Layout back="/experiences">
     <div class="mx-5 flex">
       <div class="mx-auto max-w-[50ch] space-y-5 sm:max-w-[65ch]">
         <div class="space-y-3">
-          <Heading>Stage InnovGuide</Heading>
+          <Heading>Stage Laravel</Heading>
 
           <h3 class="text-lg font-bold sm:text-xl">Présentation</h3>
           <p>
-            <strong>Innovguide</strong> est un PMS (logiciel de gestion de propriétés) qui vise à
-            faciliter la gestion des réservations, le suivi des disponibilités et les autres tâches
-            liées à la location de courte durée. J'ai travaillé sur ce projet lors d'un stage de 2
-            mois.
+            Un PMS (logiciel de gestion de propriétés) qui vise à faciliter la gestion des
+            réservations, le suivi des disponibilités et les autres tâches liées à la location de
+            courte durée. J'ai travaillé sur ce projet lors d'un stage de 2 mois.
           </p>
-          <p>Les technologies utilisées étaient Laravel, Livewire, Vue.js, MySQL et GitLab.</p>
+          <p>Les technologies utilisées étaient Laravel, Livewire, MySQL et GitLab.</p>
         </div>
         <div class="space-y-3">
           <h3 class="text-lg font-bold sm:text-xl">Ajout de fonctionnalités</h3>
