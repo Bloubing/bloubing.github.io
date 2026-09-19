@@ -35,12 +35,6 @@ import { RouterLink } from 'vue-router'
               >Recettes</RouterLink
             >
           </li>
-          <li>
-            -
-            <RouterLink to="projects/personal-website" class="hover:underline text-blue-500"
-              >Site personnel</RouterLink
-            >
-          </li>
         </ul>
       </div>
     </div>

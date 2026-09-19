@@ -18,6 +18,11 @@ import Layout from '@/shared/DefaultLayout.vue'
             documents, de consulter leurs formation et de modifier leur profil. J'ai travaillé sur
             ce projet lors d'un stage de 6 mois.
           </p>
+          <p>
+            J'ai participé au développement de l'application web du côté front-end et back-end,
+            ainsi qu'à l'intégration de l'application avec les autres projets internes et les
+            systèmes externes via des API.
+          </p>
           <p>Les technologies utilisées étaient Angular, Django, Tailwind, PostgreSQL et GitLab.</p>
         </div>
       </div>

@@ -3,7 +3,6 @@ import HomePage from '@/pages/HomePage.vue'
 import ProjectIndex from '@/pages/projects/ProjectIndex.vue'
 import ProjectMonEspace from '@/pages/projects/ProjectMonEspace.vue'
 import ProjectInnovGuide from '@/pages/projects/ProjectInnovGuide.vue'
-import ProjectPersonalWebsite from '@/pages/projects/ProjectPersonalWebsite.vue'
 import ProjectRecipes from '@/pages/projects/ProjectRecipes.vue'
 import ProjectSelfHosting from '@/pages/projects/ProjectSelfHosting.vue'
 import { createRouter, createWebHashHistory } from 'vue-router'
@@ -39,12 +38,6 @@ const router = createRouter({
       name: 'projects.innovguide',
       meta: { title: 'InnovGuide' },
       component: ProjectInnovGuide,
-    },
-    {
-      path: '/projects/personal-website',
-      name: 'projects.personal_website',
-      meta: { title: 'Site personnel' },
-      component: ProjectPersonalWebsite,
     },
     {
       path: '/projects/self-hosting',
