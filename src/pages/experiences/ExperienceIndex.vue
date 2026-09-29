@@ -8,7 +8,7 @@ import { RouterLink } from 'vue-router'
   <Layout back="/">
     <div class="mx-5 flex">
       <div class="mx-auto max-w-[50ch] sm:max-w-[65ch]">
-        <Heading>Expériences professionnelles</Heading>
+        <Heading>Expériences</Heading>
         <p class="mb-5">Cliquez sur une des expériences professionnelles pour en savoir plus :</p>
         <ul class="flex flex-col space-y-3 text-base sm:text-xl">
           <li>

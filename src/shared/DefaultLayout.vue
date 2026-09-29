@@ -149,7 +149,7 @@ onBeforeUnmount(() => {
         <p class="text-gray-800 font-normal py-4 max-w-[50ch]">
           Vous avez un projet qui touche au développement, à la communication digitale ou aux
           langues ? Ou bien simplement une question ? Je suis ouvert à de nouvelles opportunités et
-          je serai ravi d'en discuter avec vous !
+          je serais ravi d'en discuter avec vous !
         </p>
         <div
           class="transition-tranform rounded-full text-white duration-300 hover:rotate-3 md:hover:rotate-1"
