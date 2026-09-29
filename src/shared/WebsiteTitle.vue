@@ -18,6 +18,6 @@
       src="/src/assets/images/bloubi_logo.png"
       alt="Logo de Bloubing"
     />
-    <p class="z-2 text-base sm:text-2xl">Bloubing</p>
+    <p class="z-2 text-base lg:text-2xl">Bloubing</p>
   </RouterLink>
 </template>

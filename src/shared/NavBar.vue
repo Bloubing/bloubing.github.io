@@ -34,7 +34,7 @@ onBeforeUnmount(() => {
     <nav
       id="navbar"
       aria-label="Main navigation"
-      class="flex items-center justify-between p-5 text-gray-800 sm:px-20"
+      class="flex items-center justify-between p-5 text-gray-800 lg:px-20"
     >
       <WebsiteTitle />
       <div
