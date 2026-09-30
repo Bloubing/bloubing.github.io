@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import BackButton from '@/components/BackButton.vue'
-import { RouterLink } from 'vue-router'
 import NavBar from './NavBar.vue'
 import WebsiteFooter from './WebsiteFooter.vue'
 

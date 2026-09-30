@@ -36,17 +36,51 @@ import Layout from '@/shared/DefaultLayout.vue'
           </h2>
         </div>
         <ul>
-          <ProjectCard name="experiences.django_angular_internship">
+          <ProjectCard>
             <template v-slot:title>Développeur full-stack</template>
-            <p>Stage M2</p>
-            <p>février 2026 - juillet 2026</p>
-            <p>Un espace client avec Django et Angular.</p>
+            <p class="italic mb-1">févr. 2026 - juil. 2026</p>
+            <p>
+              Un espace client dédiés aux assurés de l'entreprise de stage, qui se spécialise dans
+              les assurances pour les médecins. Il permet notamment aux utilisateurs de consulter
+              leurs contrats et leurs devis, de télécharger et de téléverser des documents, de
+              consulter leurs formation et de modifier leur profil. J'ai travaillé sur ce projet
+              lors d'un stage de 6 mois. J'ai participé au développement de l'application web du
+              côté front-end et back-end, ainsi qu'à l'intégration de l'application avec les autres
+              projets internes et les systèmes externes via des API. Les technologies utilisées
+              étaient Angular, Django, Tailwind, PostgreSQL et GitLab.
+            </p>
           </ProjectCard>
-          <ProjectCard name="experiences.laravel_internship">
+          <ProjectCard>
             <template v-slot:title>Développeur Laravel</template>
-            <p>Stage M1</p>
-            <p>juillet 2025 - septembre 2025</p>
-            <p>Un PMS avec Laravel et Livewire.</p>
+            <p class="italic mb-1">juil. 2025 - sept. 2025</p>
+            <ul class="space-y-5">
+              <li class="space-y-3">
+                <p>
+                  Un PMS (logiciel de gestion de propriétés) qui vise à faciliter la gestion des
+                  réservations, le suivi des disponibilités et les autres tâches liées à la location
+                  de courte durée. J'ai travaillé sur ce projet lors d'un stage de 2 mois.
+                </p>
+                <p>Les technologies utilisées étaient Laravel, Livewire, MySQL et GitLab.</p>
+              </li>
+              <li class="space-y-3">
+                <p>
+                  J'ai ajouté des fonctionnalités comme l'ajout d'une date d'expiration des liens
+                  générés vers le guide digital des voyageurs, le stockage sécurisé de pièces
+                  d'identité des voyageurs, et la personnalisation de composants Filament pour
+                  rendre plus simple l'utilisation du back-office.
+                </p>
+              </li>
+              <li class="space-y-3">
+                <p>
+                  J'ai corrigé plusieurs bugs sur le front-office comme l'affichage de modaux sur
+                  une carte interactive de recommandations touristiques, ou encore la correction de
+                  l'affichage de certains composants sur la page de bienvenue du guide digital. J'ai
+                  aussi fourni une traduction de l'anglais vers le français sur le back-office.
+                  Enfin, j'ai rédigé de la documentation technique sur mes tâches pour aider à la
+                  collaboration au sein de mon équipe.
+                </p>
+              </li>
+            </ul>
           </ProjectCard>
         </ul>
       </section>

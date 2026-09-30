@@ -2,9 +2,6 @@ import AboutPage from '@/pages/AboutPage.vue'
 import HomePage from '@/pages/HomePage.vue'
 import LegalNoticesPage from '@/pages/LegalNoticesPage.vue'
 
-import ExperienceIndex from '@/pages/experiences/ExperienceIndex.vue'
-import ExperienceDjangoAngularInternship from '@/pages/experiences/ExperienceDjangoAngularInternship.vue'
-import ExperienceLaravelInternship from '@/pages/experiences/ExperienceLaravelInternship.vue'
 import ProjectIndex from '@/pages/projects/ProjectIndex.vue'
 import ProjectRecipes from '@/pages/projects/ProjectRecipes.vue'
 import ProjectSelfHosting from '@/pages/projects/ProjectSelfHosting.vue'
@@ -18,24 +15,6 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomePage,
-    },
-    {
-      path: '/experiences',
-      name: 'experiences.index',
-      component: ExperienceIndex,
-      meta: { title: 'Expériences' },
-    },
-    {
-      path: '/experiences/django-angular-internship',
-      name: 'experiences.django_angular_internship',
-      meta: { title: 'Stage Django Angular' },
-      component: ExperienceDjangoAngularInternship,
-    },
-    {
-      path: '/experiences/laravel-internship',
-      name: 'experiences.laravel_internship',
-      meta: { title: 'Stage Laravel' },
-      component: ExperienceLaravelInternship,
     },
     {
       path: '/projects',

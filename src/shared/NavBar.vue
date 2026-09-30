@@ -69,11 +69,6 @@ onBeforeUnmount(() => {
           <li
             class="w-full p-6 px-15 transition duration-300 hover:bg-gray-800 hover:text-white md:w-auto md:p-0 md:hover:bg-transparent md:hover:text-gray-800"
           >
-            <NavLink name="experiences.index">Expériences</NavLink>
-          </li>
-          <li
-            class="w-full p-6 px-15 transition duration-300 hover:bg-gray-800 hover:text-white md:w-auto md:p-0 md:hover:bg-transparent md:hover:text-gray-800"
-          >
             <NavLink name="projects.index">Projets</NavLink>
           </li>
           <li

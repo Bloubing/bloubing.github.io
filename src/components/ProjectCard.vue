@@ -7,7 +7,7 @@ defineProps({
 
 <template>
   <li class="p-4 transition-transform duration-500 hover:scale-[1.02]">
-    <RouterLink :to="{ name: name }" class="block">
+    <RouterLink v-if="name" :to="{ name: name }" class="block">
       <article
         class="dark:bg-gray-800-50 m-auto flex w-full flex-col border-2 border-gray-800 md:flex-row"
       >
@@ -27,5 +27,25 @@ defineProps({
         </div>
       </article>
     </RouterLink>
+
+    <article
+      v-else
+      class="dark:bg-gray-800-50 m-auto flex w-full flex-col border-2 border-gray-800 md:flex-row"
+    >
+      <div class="h-4 bg-pistachio md:h-auto md:w-3 md:flex-1"></div>
+      <div class="flex flex-col justify-between space-y-6 p-4 md:flex-10">
+        <div class="group space-y-2">
+          <header class="flex space-x-2">
+            <h2 class="text-base font-semibold tracking-wide sm:text-2xl">
+              <slot name="title" />
+            </h2>
+          </header>
+
+          <p class="text-sm sm:text-base dark:text-gray-800">
+            <slot />
+          </p>
+        </div>
+      </div>
+    </article>
   </li>
 </template>
