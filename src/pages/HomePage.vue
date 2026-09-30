@@ -6,14 +6,14 @@ import Layout from '@/shared/DefaultLayout.vue'
 
 <template>
   <Layout>
-    <section aria-label="introduction" class="px-4 py-20 text-gray-800 sm:px-8 md:py-32">
+    <section aria-label="introduction" class="px-4 py-20 text-base-content sm:px-8 md:py-32">
       <h1 class="text-center text-4xl font-bold sm:text-5xl md:text-6xl lg:text-6xl">Bloubing</h1>
       <div class="mx-auto flex max-w-3xl flex-col items-center text-center">
         <p class="mt-5 max-w-[50ch] sm:text-lg lg:text-xl">Développeur Web qui aime les langues</p>
         <div class="relative mt-10 flex">
           <RouterLink
             :to="{ name: 'projects.index' }"
-            class="relative bg-pistachio px-5 py-5 text-2xl font-semibold shadow transition-transform duration-300 before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white/.5)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:[transition:background-position_0s_ease] hover:scale-102 hover:before:bg-[position:-100%_0,0_0] hover:before:duration-[1000ms] sm:px-15 sm:py-10 md:text-3xl lg:text-4xl"
+            class="relative bg-primary text-gray-800 px-5 py-5 text-2xl font-semibold shadow transition-transform duration-300 before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white/.5)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:[transition:background-position_0s_ease] hover:scale-102 hover:before:bg-[position:-100%_0,0_0] hover:before:duration-[1000ms] sm:px-15 sm:py-10 md:text-3xl lg:text-4xl"
             >Mes projets</RouterLink
           >
           <img

@@ -34,14 +34,14 @@ onBeforeUnmount(() => {
     <nav
       id="navbar"
       aria-label="Main navigation"
-      class="flex items-center justify-between p-5 text-gray-800 lg:px-20"
+      class="flex items-center justify-between p-5 text-base-content lg:px-20"
     >
       <WebsiteTitle />
       <div
         :inert="!showSidebar && windowWidth < 768"
         :class="[
           'fixed top-0 z-10 h-[100vh] border-gray-800 transition-all duration-300 md:static md:h-auto md:border-0 md:bg-transparent md:px-0',
-          showSidebar ? 'right-0 bg-papyrus' : '-right-full',
+          showSidebar ? 'right-0 bg-base-100' : '-right-full',
         ]"
       >
         <div
@@ -67,17 +67,17 @@ onBeforeUnmount(() => {
           class="flex h-full flex-col items-center justify-start md:flex-row md:space-x-15 md:px-0"
         >
           <li
-            class="w-full p-6 px-15 transition duration-300 hover:bg-gray-800 hover:text-white md:w-auto md:p-0 md:hover:bg-transparent md:hover:text-gray-800"
+            class="w-full p-6 px-15 transition duration-300 hover:bg-gray-800 hover:text-white md:w-auto md:p-0 md:hover:bg-transparent md:hover:text-base-content"
           >
             <NavLink name="projects.index">Projets</NavLink>
           </li>
           <li
-            class="w-full p-6 px-15 transition duration-300 hover:bg-gray-800 hover:text-white md:w-auto md:p-0 md:hover:bg-transparent md:hover:text-gray-800"
+            class="w-full p-6 px-15 transition duration-300 hover:bg-gray-800 hover:text-white md:w-auto md:p-0 md:hover:bg-transparent md:hover:text-base-content"
           >
             <NavLink name="about">À propos</NavLink>
           </li>
           <li
-            class="md:hidden flex group w-full p-6 px-15 transition duration-300 hover:bg-gray-800 hover:text-white md:w-auto md:p-0 md:hover:bg-transparent md:hover:text-gray-800"
+            class="md:hidden flex group w-full p-6 px-15 transition duration-300 hover:bg-gray-800 hover:text-white md:w-auto md:p-0 md:hover:bg-transparent md:hover:text-base-content"
           >
             <a href="https://github.com/Bloubing/" target="_blank" class="md:flex flex space-x-1">
               <GitHubLogo class="group-hover:fill-white" />
@@ -86,9 +86,11 @@ onBeforeUnmount(() => {
           </li>
         </ul>
       </div>
-      <a href="https://github.com/Bloubing/" target="_blank" class="hidden md:flex">
-        <GitHubLogo />
-      </a>
+      <div class="flex items-center">
+        <a href="https://github.com/Bloubing/" target="_blank" class="hidden md:flex">
+          <GitHubLogo />
+        </a>
+      </div>
 
       <div
         aria-label="open-sidebar"

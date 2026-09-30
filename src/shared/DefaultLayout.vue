@@ -9,7 +9,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="bg-papyrus">
+  <div class="bg-base-100">
     <NavBar />
 
     <main class="text-sm sm:mx-40 sm:text-base">

@@ -9,7 +9,7 @@ import GitHubLogo from './GitHubLogo.vue'
       class="aspect-960/300 w-full bg-[url('/src/assets/images/wave2.svg')] bg-cover bg-center bg-no-repeat"
     ></section>
 
-    <div class="bg-pistachio pb-10 text-center font-bold md:pl-10 md:text-left">
+    <div class="bg-primary pb-10 text-center font-bold md:pl-10 md:text-left">
       <h2
         id="contact-heading"
         class="pt-10 text-4xl text-gray-800 sm:text-5xl md:text-6xl lg:text-7xl"

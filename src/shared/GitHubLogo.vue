@@ -4,7 +4,7 @@
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 100 100"
-    class="size-6 fill-gray-800 transition duration-300"
+    class="size-6 fill-gray-800 transition duration-300 h-6 w-6"
   >
     <path
       fill-rule="evenodd"
