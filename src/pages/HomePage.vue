@@ -85,6 +85,7 @@ import Layout from '@/shared/DefaultLayout.vue'
               <li class="flex flex-wrap gap-1">
                 <span class="badge badge-primary">Laravel</span>
                 <span class="badge badge-primary">Livewire</span>
+                <span class="badge badge-primary">Tailwind</span>
                 <span class="badge badge-primary">MySQL</span>
                 <span class="badge badge-primary">GitLab</span>
               </li>
