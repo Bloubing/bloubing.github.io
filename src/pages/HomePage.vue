@@ -37,59 +37,61 @@ import Layout from '@/shared/DefaultLayout.vue'
         </div>
         <ul>
           <ProjectCard>
-            <template v-slot:title>Développeur full-stack</template>
-            <p class="italic mb-1">févr. 2026 - juil. 2026</p>
-            <ul class="space-y-5">
-              <li class="space-y-3">
-                Un espace client dédiés aux assurés de l'entreprise de stage, qui se spécialise dans
-                les assurances pour les médecins. Il permet notamment aux utilisateurs de consulter
-                leurs contrats et leurs devis, de télécharger et de téléverser des documents, de
-                consulter leurs formation et de modifier leur profil. J'ai travaillé sur ce projet
-                lors d'un stage de 6 mois. J'ai participé au développement de l'application web du
-                côté front-end et back-end, ainsi qu'à l'intégration de l'application avec les
-                autres projets internes et les systèmes externes via des API.
-              </li>
-              <li class="flex flex-wrap gap-1">
-                <span class="badge badge-primary">Angular</span>
-                <span class="badge badge-primary">Django</span>
-                <span class="badge badge-primary">PostgreSQL</span>
-                <span class="badge badge-primary">Tailwind</span>
-                <span class="badge badge-primary">Docker</span>
-                <span class="badge badge-primary">GitLab</span>
-              </li>
-            </ul>
+            <template v-slot:title>Développeur full-stack - stage</template>
+            <div class="space-y-5">
+              <p class="italic">févr. 2026 - juil. 2026</p>
+
+              <ul class="space-y-3">
+                <li class="font-semibold">
+                  - Refonte de l'espace client d'une entreprise spécialisée dans les assurances pour
+                  médecins avec Angular (Typescript) et Django (Python).
+                </li>
+                <li>
+                  - Fonctionnalités full-stack : gestion des contrats, devis, documents, mode
+                  super-vue, système de parrainage et de satisfaction, paiement de quittances.
+                </li>
+                <li>
+                  - Intégration API avec de nombreux services internes et externes, conception API
+                  REST avec documentation Swagger.
+                </li>
+                <li>
+                  - Optimisations PostgreSQL et intégration de données en masse (>4M de lignes).
+                </li>
+                <li>- Méthode en cascade et méthode agile.</li>
+              </ul>
+              <div class="flex flex-wrap gap-1">
+                <span class="badge badge-neutral">Angular</span>
+                <span class="badge badge-neutral">Django</span>
+                <span class="badge badge-neutral">PostgreSQL</span>
+                <span class="badge badge-neutral">Tailwind</span>
+                <span class="badge badge-neutral">Docker</span>
+                <span class="badge badge-neutral">GitLab</span>
+              </div>
+            </div>
           </ProjectCard>
           <ProjectCard>
-            <template v-slot:title>Développeur Laravel</template>
-            <p class="italic mb-1">juil. 2025 - sept. 2025</p>
-            <ul class="space-y-5">
-              <li class="space-y-3">
-                Un PMS (logiciel de gestion de propriétés) qui vise à faciliter la gestion des
-                réservations, le suivi des disponibilités et les autres tâches liées à la location
-                de courte durée. J'ai travaillé sur ce projet lors d'un stage de 2 mois.
-              </li>
-              <li class="space-y-3">
-                J'ai ajouté des fonctionnalités comme l'ajout d'une date d'expiration des liens
-                générés vers le guide digital des voyageurs, le stockage sécurisé de pièces
-                d'identité des voyageurs, et la personnalisation de composants Filament pour rendre
-                plus simple l'utilisation du back-office.
-              </li>
-              <li class="space-y-3">
-                J'ai corrigé plusieurs bugs sur le front-office comme l'affichage de modaux sur une
-                carte interactive de recommandations touristiques, ou encore la correction de
-                l'affichage de certains composants sur la page de bienvenue du guide digital. J'ai
-                aussi fourni une traduction de l'anglais vers le français sur le back-office. Enfin,
-                j'ai rédigé de la documentation technique sur mes tâches pour aider à la
-                collaboration au sein de mon équipe.
-              </li>
-              <li class="flex flex-wrap gap-1">
-                <span class="badge badge-primary">Laravel</span>
-                <span class="badge badge-primary">Livewire</span>
-                <span class="badge badge-primary">Tailwind</span>
-                <span class="badge badge-primary">MySQL</span>
-                <span class="badge badge-primary">GitLab</span>
-              </li>
-            </ul>
+            <template v-slot:title>Développeur Laravel - stage</template>
+            <div class="space-y-5">
+              <p class="italic">juil. 2025 - sept. 2025</p>
+              <ul class="space-y-3">
+                <li class="font-semibold">
+                  - Développement Laravel pour une application de gestion de propriétés (PMS).
+                </li>
+                <li>
+                  - Fonctionnalités full-stack : stockage de pièces d'identité, expiration des
+                  <em>slugs</em> menant vers des guides digitaux.
+                </li>
+                <li>- Traduction anglais-français du <em>back-office</em>.</li>
+                <li>- Méthode agile.</li>
+              </ul>
+              <div class="flex flex-wrap gap-1">
+                <span class="badge badge-neutral">Laravel</span>
+                <span class="badge badge-neutral">Livewire</span>
+                <span class="badge badge-neutral">Tailwind</span>
+                <span class="badge badge-neutral">MySQL</span>
+                <span class="badge badge-neutral">GitLab</span>
+              </div>
+            </div>
           </ProjectCard>
         </ul>
       </section>
