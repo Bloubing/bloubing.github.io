@@ -39,46 +39,54 @@ import Layout from '@/shared/DefaultLayout.vue'
           <ProjectCard>
             <template v-slot:title>Développeur full-stack</template>
             <p class="italic mb-1">févr. 2026 - juil. 2026</p>
-            <p>
-              Un espace client dédiés aux assurés de l'entreprise de stage, qui se spécialise dans
-              les assurances pour les médecins. Il permet notamment aux utilisateurs de consulter
-              leurs contrats et leurs devis, de télécharger et de téléverser des documents, de
-              consulter leurs formation et de modifier leur profil. J'ai travaillé sur ce projet
-              lors d'un stage de 6 mois. J'ai participé au développement de l'application web du
-              côté front-end et back-end, ainsi qu'à l'intégration de l'application avec les autres
-              projets internes et les systèmes externes via des API. Les technologies utilisées
-              étaient Angular, Django, Tailwind, PostgreSQL et GitLab.
-            </p>
+            <ul class="space-y-5">
+              <li class="space-y-3">
+                Un espace client dédiés aux assurés de l'entreprise de stage, qui se spécialise dans
+                les assurances pour les médecins. Il permet notamment aux utilisateurs de consulter
+                leurs contrats et leurs devis, de télécharger et de téléverser des documents, de
+                consulter leurs formation et de modifier leur profil. J'ai travaillé sur ce projet
+                lors d'un stage de 6 mois. J'ai participé au développement de l'application web du
+                côté front-end et back-end, ainsi qu'à l'intégration de l'application avec les
+                autres projets internes et les systèmes externes via des API.
+              </li>
+              <li class="flex flex-wrap gap-1">
+                <span class="badge badge-primary">Angular</span>
+                <span class="badge badge-primary">Django</span>
+                <span class="badge badge-primary">PostgreSQL</span>
+                <span class="badge badge-primary">Tailwind</span>
+                <span class="badge badge-primary">Docker</span>
+                <span class="badge badge-primary">GitLab</span>
+              </li>
+            </ul>
           </ProjectCard>
           <ProjectCard>
             <template v-slot:title>Développeur Laravel</template>
             <p class="italic mb-1">juil. 2025 - sept. 2025</p>
             <ul class="space-y-5">
               <li class="space-y-3">
-                <p>
-                  Un PMS (logiciel de gestion de propriétés) qui vise à faciliter la gestion des
-                  réservations, le suivi des disponibilités et les autres tâches liées à la location
-                  de courte durée. J'ai travaillé sur ce projet lors d'un stage de 2 mois.
-                </p>
-                <p>Les technologies utilisées étaient Laravel, Livewire, MySQL et GitLab.</p>
+                Un PMS (logiciel de gestion de propriétés) qui vise à faciliter la gestion des
+                réservations, le suivi des disponibilités et les autres tâches liées à la location
+                de courte durée. J'ai travaillé sur ce projet lors d'un stage de 2 mois.
               </li>
               <li class="space-y-3">
-                <p>
-                  J'ai ajouté des fonctionnalités comme l'ajout d'une date d'expiration des liens
-                  générés vers le guide digital des voyageurs, le stockage sécurisé de pièces
-                  d'identité des voyageurs, et la personnalisation de composants Filament pour
-                  rendre plus simple l'utilisation du back-office.
-                </p>
+                J'ai ajouté des fonctionnalités comme l'ajout d'une date d'expiration des liens
+                générés vers le guide digital des voyageurs, le stockage sécurisé de pièces
+                d'identité des voyageurs, et la personnalisation de composants Filament pour rendre
+                plus simple l'utilisation du back-office.
               </li>
               <li class="space-y-3">
-                <p>
-                  J'ai corrigé plusieurs bugs sur le front-office comme l'affichage de modaux sur
-                  une carte interactive de recommandations touristiques, ou encore la correction de
-                  l'affichage de certains composants sur la page de bienvenue du guide digital. J'ai
-                  aussi fourni une traduction de l'anglais vers le français sur le back-office.
-                  Enfin, j'ai rédigé de la documentation technique sur mes tâches pour aider à la
-                  collaboration au sein de mon équipe.
-                </p>
+                J'ai corrigé plusieurs bugs sur le front-office comme l'affichage de modaux sur une
+                carte interactive de recommandations touristiques, ou encore la correction de
+                l'affichage de certains composants sur la page de bienvenue du guide digital. J'ai
+                aussi fourni une traduction de l'anglais vers le français sur le back-office. Enfin,
+                j'ai rédigé de la documentation technique sur mes tâches pour aider à la
+                collaboration au sein de mon équipe.
+              </li>
+              <li class="flex flex-wrap gap-1">
+                <span class="badge badge-primary">Laravel</span>
+                <span class="badge badge-primary">Livewire</span>
+                <span class="badge badge-primary">MySQL</span>
+                <span class="badge badge-primary">GitLab</span>
               </li>
             </ul>
           </ProjectCard>
