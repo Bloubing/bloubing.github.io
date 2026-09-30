@@ -69,17 +69,17 @@ onBeforeUnmount(() => {
           <li
             class="w-full p-6 px-15 transition duration-300 hover:bg-gray-800 hover:text-white md:w-auto md:p-0 md:hover:bg-transparent md:hover:text-gray-800"
           >
-            <NavLink to="/experiences">Expériences</NavLink>
+            <NavLink name="experiences.index">Expériences</NavLink>
           </li>
           <li
             class="w-full p-6 px-15 transition duration-300 hover:bg-gray-800 hover:text-white md:w-auto md:p-0 md:hover:bg-transparent md:hover:text-gray-800"
           >
-            <NavLink to="/projects">Projets</NavLink>
+            <NavLink name="projects.index">Projets</NavLink>
           </li>
           <li
             class="w-full p-6 px-15 transition duration-300 hover:bg-gray-800 hover:text-white md:w-auto md:p-0 md:hover:bg-transparent md:hover:text-gray-800"
           >
-            <NavLink to="/about">À propos</NavLink>
+            <NavLink name="about">À propos</NavLink>
           </li>
           <li
             class="md:hidden flex group w-full p-6 px-15 transition duration-300 hover:bg-gray-800 hover:text-white md:w-auto md:p-0 md:hover:bg-transparent md:hover:text-gray-800"

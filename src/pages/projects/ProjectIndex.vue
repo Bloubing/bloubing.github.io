@@ -13,19 +13,21 @@ import { RouterLink } from 'vue-router'
         <ul class="flex flex-col space-y-3 text-base sm:text-xl">
           <li>
             -
-            <RouterLink to="/projects/tron" class="hover:underline text-blue-500"
+            <RouterLink :to="{ name: 'projects.tron' }" class="hover:underline text-blue-500"
               >Jeu TRON</RouterLink
             >
           </li>
           <li>
             -
-            <RouterLink to="/projects/self-hosting" class="hover:underline text-blue-500"
+            <RouterLink
+              :to="{ name: 'projects.self_hosting' }"
+              class="hover:underline text-blue-500"
               >Auto-hébergement</RouterLink
             >
           </li>
           <li>
             -
-            <RouterLink to="projects/recipes" class="hover:underline text-blue-500"
+            <RouterLink :to="{ name: 'projects.recipes' }" class="hover:underline text-blue-500"
               >Recettes</RouterLink
             >
           </li>

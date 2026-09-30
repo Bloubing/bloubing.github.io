@@ -1,5 +1,7 @@
 import AboutPage from '@/pages/AboutPage.vue'
 import HomePage from '@/pages/HomePage.vue'
+import LegalNoticesPage from '@/pages/LegalNoticesPage.vue'
+
 import ExperienceIndex from '@/pages/experiences/ExperienceIndex.vue'
 import ExperienceDjangoAngularInternship from '@/pages/experiences/ExperienceDjangoAngularInternship.vue'
 import ExperienceLaravelInternship from '@/pages/experiences/ExperienceLaravelInternship.vue'
@@ -25,13 +27,13 @@ const router = createRouter({
     },
     {
       path: '/experiences/django-angular-internship',
-      name: 'experiences.django-angular-internship',
+      name: 'experiences.django_angular_internship',
       meta: { title: 'Stage Django Angular' },
       component: ExperienceDjangoAngularInternship,
     },
     {
       path: '/experiences/laravel-internship',
-      name: 'experiences.laravel-internship',
+      name: 'experiences.laravel_internship',
       meta: { title: 'Stage Laravel' },
       component: ExperienceLaravelInternship,
     },
@@ -64,6 +66,12 @@ const router = createRouter({
       name: 'about',
       meta: { title: 'À propos' },
       component: AboutPage,
+    },
+    {
+      path: '/legal-notices',
+      name: 'legal_notices',
+      meta: { title: 'Mentions légales' },
+      component: LegalNoticesPage,
     },
   ],
 })

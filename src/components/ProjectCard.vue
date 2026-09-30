@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
 defineProps({
-  to: String,
+  name: String,
 })
 </script>
 
 <template>
   <li class="p-4 transition-transform duration-500 hover:scale-[1.02]">
-    <RouterLink :to="to" class="block">
+    <RouterLink :to="{ name: name }" class="block">
       <article
         class="dark:bg-gray-800-50 m-auto flex w-full flex-col border-2 border-gray-800 md:flex-row"
       >

@@ -12,7 +12,7 @@ import Layout from '@/shared/DefaultLayout.vue'
         <p class="mt-5 max-w-[50ch] sm:text-lg lg:text-xl">Développeur Web qui aime les langues</p>
         <div class="relative mt-10 flex">
           <RouterLink
-            to="/projects"
+            :to="{ name: 'projects.index' }"
             class="relative bg-pistachio px-5 py-5 text-2xl font-semibold shadow transition-transform duration-300 before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white/.5)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:[transition:background-position_0s_ease] hover:scale-102 hover:before:bg-[position:-100%_0,0_0] hover:before:duration-[1000ms] sm:px-15 sm:py-10 md:text-3xl lg:text-4xl"
             >Mes projets</RouterLink
           >
@@ -36,13 +36,13 @@ import Layout from '@/shared/DefaultLayout.vue'
           </h2>
         </div>
         <ul>
-          <ProjectCard to="/experiences/django-angular-internship">
+          <ProjectCard name="experiences.django_angular_internship">
             <template v-slot:title>Développeur full-stack</template>
             <p>Stage M2</p>
             <p>février 2026 - juillet 2026</p>
             <p>Un espace client avec Django et Angular.</p>
           </ProjectCard>
-          <ProjectCard to="/experiences/laravel-internship">
+          <ProjectCard name="experiences.laravel_internship">
             <template v-slot:title>Développeur Laravel</template>
             <p>Stage M1</p>
             <p>juillet 2025 - septembre 2025</p>
@@ -63,11 +63,11 @@ import Layout from '@/shared/DefaultLayout.vue'
           </h2>
         </div>
         <ul>
-          <ProjectCard to="/projects/tron">
+          <ProjectCard name="projects.tron">
             <template v-slot:title>Jeu TRON</template>
             Un jeu TRON multijoueur.
           </ProjectCard>
-          <ProjectCard to="/projects/self-hosting">
+          <ProjectCard name="projects.self_hosting">
             <template v-slot:title>Auto-hébergement</template>
             Un serveur qui héberge des services comme Pihole et Immich.
           </ProjectCard>

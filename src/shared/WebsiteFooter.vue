@@ -52,19 +52,26 @@
     ></div>
 
     <nav aria-label="Barre de navigation de pied de page" class="bg-gray-800 p-15 text-white">
-      <ul class="flex justify-center space-x-10 text-sm sm:text-base">
+      <ul class="flex flex-col sm:flex-row justify-center space-x-10 text-sm sm:text-base">
         <li>
           <RouterLink
             class="transition-all duration-300 hover:text-shadow-white hover:text-shadow-xs"
-            to="/projects"
+            :to="{ name: 'projects.index' }"
             >Projets</RouterLink
           >
         </li>
         <li>
           <RouterLink
             class="transition-all duration-300 hover:text-shadow-white hover:text-shadow-xs"
-            to="/about"
+            :to="{ name: 'about' }"
             >À propos</RouterLink
+          >
+        </li>
+        <li>
+          <RouterLink
+            class="transition-all duration-300 hover:text-shadow-white hover:text-shadow-xs"
+            :to="{ name: 'legal_notices' }"
+            >Mentions légales</RouterLink
           >
         </li>
       </ul>

@@ -14,14 +14,16 @@ import { RouterLink } from 'vue-router'
           <li>
             -
             <RouterLink
-              to="/experiences/django-angular-internship"
+              :to="{ name: 'experiences.django_angular_internship' }"
               class="hover:underline text-blue-500"
               >Stage Django Angular</RouterLink
             >
           </li>
           <li>
             -
-            <RouterLink to="/experiences/laravel-internship" class="hover:underline text-blue-500"
+            <RouterLink
+              :to="{ name: 'experiences.laravel_internship' }"
+              class="hover:underline text-blue-500"
               >Stage Laravel</RouterLink
             >
           </li>

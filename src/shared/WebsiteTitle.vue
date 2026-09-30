@@ -2,7 +2,7 @@
 
 <template>
   <RouterLink
-    to="/"
+    :to="{ name: 'home' }"
     aria-label="Retour à l'accueil"
     class="relative flex items-center space-x-1 text-3xl font-bold"
   >
