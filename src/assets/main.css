@@ -39,7 +39,7 @@
   --depth: 1;
   --noise: 0;
 }
-
+/* 
 @plugin "daisyui/theme" {
   name: 'bloubing_dark';
   default: false;
@@ -73,7 +73,7 @@
   --border: 1px;
   --depth: 1;
   --noise: 0;
-}
+} */
 
 @theme inline {
   --color-papyrus: #fff7f3;
