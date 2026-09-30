@@ -2,7 +2,7 @@
 
 @import 'tailwindcss';
 @plugin "daisyui" {
-  themes: bloubing_light, bloubing_dark;
+  themes: bloubing_light;
 }
 
 @plugin "daisyui/theme" {
