@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import GitHubLogo from './GitHubLogo.vue'
+</script>
 
 <template>
   <footer>
@@ -52,6 +54,11 @@
     ></div>
 
     <nav aria-label="Barre de navigation de pied de page" class="bg-gray-800 p-15 text-white">
+      <div class="flex items-start">
+        <a href="https://github.com/Bloubing/" target="_blank" class="mx-auto">
+          <GitHubLogo class="fill-white mb-5" />
+        </a>
+      </div>
       <ul class="flex flex-col sm:flex-row justify-center space-x-10 text-sm sm:text-base">
         <li>
           <RouterLink
