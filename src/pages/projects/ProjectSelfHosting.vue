@@ -8,10 +8,10 @@ import Layout from '@/shared/DefaultLayout.vue'
     <div class="mx-5 flex">
       <div class="mx-auto max-w-[50ch] space-y-5 sm:max-w-[65ch]">
         <Heading>Auto-hébergement</Heading>
-        <summary class="bg-primary p-5 border-2 border-base-content list-none">
+        <p class="bg-primary p-5 border-2 border-base-content list-none">
           J'héberge et administre un serveur local (Ubuntu Server) sur lequel tournent des services
           comme Immich et Pi-Hole.
-        </summary>
+        </p>
         <section class="list-none space-y-3">
           <h3 class="font-bold mb-">Pourquoi ?</h3>
           <ul class="space-y-3">
