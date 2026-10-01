@@ -30,7 +30,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <header>
+  <header class="sticky z-2 top-0 bg-base-100 shadow-b-base-content shadow-md">
     <nav
       id="navbar"
       aria-label="Main navigation"
