@@ -10,32 +10,49 @@ import GitHubLogo from '@/shared/GitHubLogo.vue'
     <div class="mx-5 flex">
       <div class="mx-auto max-w-[50ch] space-y-5 sm:max-w-[65ch]">
         <Heading>Recettes</Heading>
-        <p>
-          <strong>Recettes</strong> est un site de recettes comme Marmiton réalisé avec Laravel,
-          Livewire, Tailwind & Alpine.js dans le cadre d'un projet académique, en groupe de 3.
+        <p class="bg-primary p-5 border-2 border-base-content list-none">
+          <strong>Recettes</strong>, un site façon Marmiton où partager ses créations culinaires !
         </p>
+        <ul class="flex flex-col space-y-4">
+          <li>
+            <a
+              target="_blank"
+              href="https://github.com/Bloubing/M1-recettes"
+              class="text-blue-500 flex space-x-1 hover:underline"
+            >
+              <GitHubLogo />
+              <p>Code source</p>
+            </a>
+          </li>
+        </ul>
 
-        <p>
-          Ce projet comprend notamment une gestion des recettes, de commentaires, d'ingrédients et
-          de notes. Il est possible d'ajouter des images pour les recettes. Il y a également une
-          interface d'administration permettant de gérer les recettes et de modérer les commentaires
-          en vérifiant les signalements.
-        </p>
+        <section class="list-none space-y-3">
+          <h3 class="font-bold mb-">Pourquoi ?</h3>
+          <ul class="space-y-3">
+            <li>- Projet académique de M1, réalisé en groupe de 3.</li>
+            <li>- ...</li>
+          </ul>
+        </section>
 
-        <div>
-          <h2 class="font-semibold my-3 text-md">Liens</h2>
-          <ul class="flex flex-col space-y-4">
+        <section class="space-y-3">
+          <h3 class="font-bold">Fonctionnalités</h3>
+          <ul class="space-y-3">
+            <li>- ...</li>
+            <li>- Gestion des recettes, de commentaires, d'ingrédients et de notes.</li>
             <li>
-              <a
-                href="https://github.com/Bloubing/M1-recettes"
-                class="text-blue-500 flex space-x-1 hover:underline"
-              >
-                <GitHubLogo />
-                <p>Code source</p>
-              </a>
+              - Interface d'administration et de modération des recettes et des commentaires basée
+              sur des signalements.
             </li>
           </ul>
-        </div>
+        </section>
+
+        <section class="flex flex-wrap gap-1">
+          <span class="badge badge-neutral">PHP</span>
+          <span class="badge badge-neutral">Javascript</span>
+          <span class="badge badge-neutral">Laravel</span>
+          <span class="badge badge-neutral">Livewire</span>
+          <span class="badge badge-neutral">Tailwind</span>
+        </section>
       </div>
     </div>
   </Layout>
