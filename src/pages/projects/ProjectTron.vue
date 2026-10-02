@@ -8,37 +8,53 @@ import GitHubLogo from '@/shared/GitHubLogo.vue'
   <Layout back="/projects">
     <div class="mx-5 flex">
       <div class="mx-auto max-w-[50ch] space-y-5 sm:max-w-[65ch]">
-        <div class="space-y-3">
-          <Heading>Jeu TRON</Heading>
+        <Heading>Jeu TRON</Heading>
 
-          <h3 class="text-lg font-bold sm:text-xl">Présentation</h3>
-          <p>
-            Le <strong>jeu TRON</strong> est un jeu multijoueur inspiré de Tron, jouable à la fois
-            dans le navigateur et sur mobile grâce à Cordova. L’application présente une
-            architecture client–serveur et une communication via Websockets. Elle permet une
-            authentification simple, la création de lobbies, la possibilité de jouer plusieurs
-            parties en parallèle et le stockage de statistiques dans MongoDB.
-          </p>
-          <p>
-            Les technologies utilisées étaient Node.js, Cordova, MongoDB, la communication Websocket
-            et GitHub.
-          </p>
+        <p class="bg-primary p-5 border-2 border-base-content list-none">
+          Un <strong>jeu TRON</strong>, grand classique des jeux d'arcades, en version
+          multiplateforme.
+        </p>
+        <ul class="flex flex-col space-y-4">
+          <li>
+            <a
+              target="_blank"
+              href="https://github.com/Bloubing/M2-TRON"
+              class="text-blue-500 flex space-x-1 hover:underline"
+            >
+              <GitHubLogo />
+              <p>Code source</p>
+            </a>
+          </li>
+        </ul>
 
-          <div>
-            <h2 class="font-semibold my-3 text-md">Liens</h2>
-            <ul class="flex flex-col space-y-4">
-              <li>
-                <a
-                  href="https://github.com/Bloubing/M2-TRON"
-                  class="text-blue-500 flex space-x-1 hover:underline"
-                >
-                  <GitHubLogo />
-                  <p>Code source</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <section class="list-none space-y-3">
+          <h3 class="font-bold mb-">Pourquoi ?</h3>
+          <ul class="space-y-3">
+            <li>- Projet académique de M2, réalisé en groupe.</li>
+            <li>
+              - Se familiariser avec plusieurs technologies (NoSQL, WebSockets) de façon ludique.
+            </li>
+          </ul>
+        </section>
+
+        <section class="space-y-3">
+          <h3 class="font-bold">Fonctionnalités</h3>
+          <ul class="space-y-3">
+            <li>- Architecture client–serveur et communication via WebSockets.</li>
+            <li>- Jeu multiplateforme (navigateur et Android) avec Cordova.</li>
+            <li>
+              - Système de <em>lobbies</em>, parties jouables en parallèles, personnalisation des
+              joueurs, et classement.
+            </li>
+          </ul>
+        </section>
+
+        <section class="flex flex-wrap gap-1">
+          <span class="badge badge-neutral">Node.js</span>
+          <span class="badge badge-neutral">Cordova</span>
+          <span class="badge badge-neutral">MongoDB</span>
+          <span class="badge badge-neutral">WebSocket</span>
+        </section>
       </div>
     </div>
   </Layout>

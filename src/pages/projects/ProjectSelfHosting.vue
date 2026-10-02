@@ -36,11 +36,11 @@ import Layout from '@/shared/DefaultLayout.vue'
           </ul>
         </section>
 
-        <div class="flex flex-wrap gap-1">
+        <section class="flex flex-wrap gap-1">
           <span class="badge badge-neutral">Linux (Debian/Ubuntu)</span>
           <span class="badge badge-neutral">Docker</span>
           <span class="badge badge-neutral">Docker Compose</span>
-        </div>
+        </section>
       </div>
     </div>
   </Layout>
