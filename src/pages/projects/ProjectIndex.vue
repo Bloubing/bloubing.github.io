@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Heading from '@/components/Heading.vue'
 import Layout from '@/shared/DefaultLayout.vue'
-import { RouterLink } from 'vue-router'
+import ProjectCard from '@/components/ProjectCard.vue';
 </script>
 
 <template>
@@ -10,28 +10,21 @@ import { RouterLink } from 'vue-router'
       <div class="mx-auto max-w-[50ch] sm:max-w-[65ch]">
         <Heading>Projets</Heading>
         <p class="mb-5">Cliquez sur un des projets pour en savoir plus :</p>
-        <ul class="flex flex-col space-y-3 text-base sm:text-xl">
-          <li>
-            -
-            <RouterLink :to="{ name: 'projects.tron' }" class="hover:underline text-blue-500"
-              >Jeu TRON</RouterLink
-            >
-          </li>
-          <li>
-            -
-            <RouterLink
-              :to="{ name: 'projects.self_hosting' }"
-              class="hover:underline text-blue-500"
-              >Auto-hébergement</RouterLink
-            >
-          </li>
-          <li>
-            -
-            <RouterLink :to="{ name: 'projects.recipes' }" class="hover:underline text-blue-500"
-              >Recettes</RouterLink
-            >
-          </li>
+        <ul class="space-y-3">
+          <ProjectCard name="projects.tron">
+            <template v-slot:title>Jeu TRON</template>
+            Un jeu TRON, grand classique des jeux d'arcades, en version multiplateforme. 
+          </ProjectCard>
+          <ProjectCard name="projects.self_hosting">
+            <template v-slot:title>Auto-hébergement</template>
+            J'héberge et administre un serveur local pour profiter de multiples services.
+          </ProjectCard>
+          <ProjectCard name="projects.recipes">
+            <template v-slot:title>Recettes</template>
+            Un site façon Marmiton où partager ses créations culinaires ! 
+          </ProjectCard>
         </ul>
+          
       </div>
     </div>
   </Layout>

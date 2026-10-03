@@ -104,11 +104,11 @@ import Layout from '@/shared/DefaultLayout.vue'
         <ul class="space-y-3">
           <ProjectCard name="projects.tron">
             <template v-slot:title>Jeu TRON</template>
-            Un jeu TRON multijoueur.
+            Un jeu TRON, grand classique des jeux d'arcades, en version multiplateforme. 
           </ProjectCard>
           <ProjectCard name="projects.self_hosting">
             <template v-slot:title>Auto-hébergement</template>
-            Un serveur qui héberge des services comme Pihole et Immich.
+            J'héberge et administre un serveur local pour profiter de multiples services.
           </ProjectCard>
         </ul>
       </section>
