@@ -13,7 +13,7 @@ import Layout from '@/shared/DefaultLayout.vue'
           comme Immich et Pi-Hole.
         </p>
         <section class="list-none space-y-3">
-          <h3 class="font-bold mb-">Pourquoi ?</h3>
+          <h3 class="text-lg font-bold sm:text-xl">Pourquoi ?</h3>
           <ul class="space-y-3">
             <li>- Avoir un meilleur de contrôle sur ma vie privée et mes données.</li>
             <li>
@@ -25,7 +25,7 @@ import Layout from '@/shared/DefaultLayout.vue'
           </ul>
         </section>
         <section class="space-y-3">
-          <h3 class="font-bold">Fonctionnalités</h3>
+          <h3 class="text-lg font-bold sm:text-xl">Fonctionnalités</h3>
           <ul class="space-y-3">
             <li>- Isolation de chaque service dans des conteneurs Docker.</li>
             <li>- Supervision du serveur avec Bezsel et des conteneurs Docker avec Dockhand.</li>

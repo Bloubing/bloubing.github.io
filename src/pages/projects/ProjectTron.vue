@@ -28,7 +28,7 @@ import GitHubLogo from '@/shared/GitHubLogo.vue'
         </ul>
 
         <section class="list-none space-y-3">
-          <h3 class="font-bold mb-">Pourquoi ?</h3>
+          <h3 class="text-lg font-bold sm:text-xl">Pourquoi ?</h3>
           <ul class="space-y-3">
             <li>- Projet académique de M2, réalisé en groupe.</li>
             <li>
@@ -38,7 +38,7 @@ import GitHubLogo from '@/shared/GitHubLogo.vue'
         </section>
 
         <section class="space-y-3">
-          <h3 class="font-bold">Fonctionnalités</h3>
+          <h3 class="text-lg font-bold sm:text-xl">Fonctionnalités</h3>
           <ul class="space-y-3">
             <li>- Architecture client–serveur et communication via WebSockets.</li>
             <li>- Jeu multiplateforme (navigateur et Android) avec Cordova.</li>
