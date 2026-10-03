@@ -25,7 +25,7 @@ import Layout from '@/shared/DefaultLayout.vue'
       </div>
     </section>
 
-    <div class="space-y-7 mx-auto max-w-[100ch] sm:max-w-[130ch]">
+    <div class="space-y-7 mx-auto max-w-[50ch] sm:max-w-[100ch]">
       <section aria-labelledby="experiences-heading" class="space-y-3">
           <h2
             id="experiences-heading"
