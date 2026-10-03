@@ -5,7 +5,7 @@ import Layout from '@/shared/DefaultLayout.vue'
 </script>
 
 <template>
-  <Layout>
+  <Layout >
     <section aria-label="introduction" class="px-4 py-20 text-base-content sm:px-8 md:py-32">
       <h1 class="text-center text-4xl font-bold sm:text-5xl md:text-6xl lg:text-6xl">Bloubing</h1>
       <div class="mx-auto flex max-w-3xl flex-col items-center text-center">
@@ -24,8 +24,9 @@ import Layout from '@/shared/DefaultLayout.vue'
         </div>
       </div>
     </section>
+    <div class="mx-5 flex">
 
-    <div class="space-y-7 mx-auto max-w-[50ch] sm:max-w-[100ch]">
+    <div class="mx-auto space-y-7 max-w-[50ch] sm:max-w-[100ch]">
       <section aria-labelledby="experiences-heading" class="space-y-3">
           <h2
             id="experiences-heading"
@@ -112,6 +113,7 @@ import Layout from '@/shared/DefaultLayout.vue'
           </ProjectCard>
         </ul>
       </section>
+    </div>
     </div>
   </Layout>
 </template>
