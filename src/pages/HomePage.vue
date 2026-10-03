@@ -25,20 +25,18 @@ import Layout from '@/shared/DefaultLayout.vue'
       </div>
     </section>
 
-    <div>
-      <section aria-labelledby="projects-heading">
-        <div class="mx-4">
+    <div class="space-y-7">
+      <section aria-labelledby="experiences-heading" class="space-y-3">
           <h2
-            id="technologies-heading"
+            id="experiences-heading"
             class="bg-gray-800 px-4 py-2 text-base font-bold text-white sm:text-4xl"
           >
             Expériences
           </h2>
-        </div>
-        <ul>
+        <ul class="space-y-3">
           <ProjectCard>
             <template v-slot:title>Développeur full-stack - stage</template>
-            <div class="space-y-5">
+            <div class="space-y-3">
               <p class="italic">févr. 2026 - juil. 2026</p>
 
               <ul class="space-y-3">
@@ -71,7 +69,7 @@ import Layout from '@/shared/DefaultLayout.vue'
           </ProjectCard>
           <ProjectCard>
             <template v-slot:title>Développeur Laravel - stage</template>
-            <div class="space-y-5">
+            <div class="space-y-3">
               <p class="italic">juil. 2025 - sept. 2025</p>
               <ul class="space-y-3">
                 <li class="font-semibold">
@@ -95,19 +93,15 @@ import Layout from '@/shared/DefaultLayout.vue'
           </ProjectCard>
         </ul>
       </section>
-    </div>
 
-    <div>
-      <section aria-labelledby="projects-heading">
-        <div class="mx-4">
+      <section aria-labelledby="projects-heading" class="space-y-3">
           <h2
-            id="technologies-heading"
+            id="projects-heading"
             class="bg-gray-800 px-4 py-2 text-base font-bold text-white sm:text-4xl"
           >
             Sélection de projets
           </h2>
-        </div>
-        <ul>
+        <ul class="space-y-3">
           <ProjectCard name="projects.tron">
             <template v-slot:title>Jeu TRON</template>
             Un jeu TRON multijoueur.

@@ -6,10 +6,10 @@ defineProps({
 </script>
 
 <template>
-  <li class="p-4 transition-transform duration-500 hover:scale-[1.02]">
+  <li class="transition-transform duration-500 hover:scale-[1.02] border-2 border-base-content">
     <RouterLink v-if="name" :to="{ name: name }" class="block">
       <article
-        class="dark:bg-gray-800-50 m-auto flex w-full flex-col border-2 border-base-content md:flex-row"
+        class="dark:bg-gray-800-50 m-auto flex w-full flex-col  md:flex-row"
       >
         <div class="h-4 bg-primary md:h-auto md:w-3 md:flex-1"></div>
         <div class="flex flex-col justify-between space-y-6 p-4 md:flex-10">
@@ -30,7 +30,7 @@ defineProps({
 
     <article
       v-else
-      class="dark:bg-gray-800-50 m-auto flex w-full flex-col border-2 border-gray-800 md:flex-row"
+      class="dark:bg-gray-800-50 m-auto flex w-full flex-col md:flex-row"
     >
       <div class="h-4 bg-primary md:h-auto md:w-3 md:flex-1"></div>
       <div class="flex flex-col justify-between space-y-6 p-4 md:flex-10">
