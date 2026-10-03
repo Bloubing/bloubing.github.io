@@ -30,15 +30,16 @@ import GitHubLogo from '@/shared/GitHubLogo.vue'
           <h3 class="text-lg font-bold sm:text-xl">Pourquoi ?</h3>
           <ul class="space-y-3">
             <li>- Projet académique de M1, réalisé en groupe de 3.</li>
-            <li>- ...</li>
+            <li>- Développer une application Web de zéro avec un framework utlisant l'architecture MVC (Laravel).</li>
           </ul>
         </section>
 
         <section class="space-y-3">
           <h3 class="text-lg font-bold sm:text-xl">Fonctionnalités</h3>
           <ul class="space-y-3">
-            <li>- ...</li>
-            <li>- Gestion des recettes, de commentaires, d'ingrédients et de notes.</li>
+            <li>- Gestion complète des recettes, brouillons et favoris.</li>
+            <li>- Possibilité de noter, de catégoriser et de commenter les recettes.</li>
+            <li>- Authentification avec vérification de l'e-mail ou OAuth via GitHub.</li>
             <li>
               - Interface d'administration et de modération des recettes et des commentaires basée
               sur des signalements.

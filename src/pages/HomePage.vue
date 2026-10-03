@@ -75,7 +75,7 @@ import Layout from '@/shared/DefaultLayout.vue'
               <p class="italic">juil. 2025 - sept. 2025</p>
               <ul class="space-y-3">
                 <li class="font-semibold">
-                  - Développement Laravel pour une application de gestion de propriétés (PMS).
+                  - Développement Laravel (PHP) pour une application de gestion de propriétés (PMS).
                 </li>
                 <li>
                   - Fonctionnalités full-stack : stockage de pièces d'identité, expiration des
