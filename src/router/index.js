@@ -53,6 +53,9 @@ const router = createRouter({
       component: LegalNoticesPage,
     },
   ],
+  scrollBehavior() {
+  return { top: 0 }
+},
 })
 
 router.beforeEach((to, from, next) => {
