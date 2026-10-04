@@ -17,7 +17,7 @@ import Layout from '@/shared/DefaultLayout.vue'
             >Mes projets</RouterLink
           >
           <img
-            class="absolute -top-7 left-45 w-24 rotate-[-10deg] transition-transform duration-300 hover:scale-105 hover:rotate-0 sm:left-60 sm:w-36 md:left-70 lg:left-80"
+            class="absolute -top-7 left-45 w-24 rotate-[-10deg] transition-transform duration-300 hover:scale-105 hover:rotate-0 hidden sm:block sm:left-60 sm:w-36 md:left-70 lg:left-80"
             src="/src/assets/images/arrow.png"
             alt="Flèche pointant le bouton 'Projets'"
           />
