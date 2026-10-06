@@ -94,8 +94,8 @@ const { t } = useI18n({
         <section class="space-y-3">
           <h3 class="text-lg font-bold sm:text-xl">{{t('features.heading')}}</h3>
           <ul class="space-y-3">
-            <li>{{t('why.why_1')}}</li>
-            <li>{{t('why.why_2')}}</li>
+            <li>{{t('features.feature_1')}}</li>
+            <li>{{t('features.feature_2')}}</li>
             <li>
               <Translation keypath="features.feature_3" tag="label" for="features.lobbies">
               <em>{{ t('features.lobbies') }}</em>
