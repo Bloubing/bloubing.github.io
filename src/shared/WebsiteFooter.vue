@@ -1,5 +1,31 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import GitHubLogo from './GitHubLogo.vue'
+
+const { t } = useI18n({
+  messages: {
+    en: {
+      heading: 'Let\'s get in touch!',
+      contact_text: "Any project or question in mind? I'd love to hear about and I'm open to new opportunities.",
+      email: 'Email me',
+      nav: {
+        projects: 'Projects',
+        about: 'About',
+        legal_notices: 'Legal notices'
+      }
+    },
+    fr: {
+      heading: 'Contactez-moi !',
+      contact_text: "Un projet qui pourrait m'intéresser ou une question ? Je suis ouvert à de nouvelles opportunités et je serais ravi d'en discuter avec vous !",
+      email: 'Écrire un e-mail',
+      nav: {
+        projects: 'Projects',
+        about: 'À propos',
+        legal_notices: 'Mentions légales'
+      }
+    },
+  }
+})
 </script>
 
 <template>
@@ -14,11 +40,10 @@ import GitHubLogo from './GitHubLogo.vue'
         id="contact-heading"
         class="pt-10 text-4xl text-gray-800 sm:text-5xl md:text-6xl lg:text-7xl"
       >
-        Contactez-moi !
+        {{ t('heading') }}
       </h2>
       <p class="text-gray-800 text-sm font-normal py-4 max-w-[50ch] mx-20 md:m-0">
-        Un projet qui pourrait m'intéresser ou une question ? Je suis ouvert à de nouvelles
-        opportunités et je serais ravi d'en discuter avec vous !
+        {{ t('contact_text') }}
       </p>
       <div
         class="transition-tranform rounded-full text-white duration-300 hover:rotate-3 md:hover:rotate-1"
@@ -44,7 +69,7 @@ import GitHubLogo from './GitHubLogo.vue'
               d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
             />
           </svg>
-          <span>Écrire un e-mail</span>
+          <span>{{ t('email') }}</span>
         </a>
       </div>
     </div>
@@ -64,21 +89,21 @@ import GitHubLogo from './GitHubLogo.vue'
           <RouterLink
             class="transition-all duration-300 hover:text-shadow-white hover:text-shadow-xs"
             :to="{ name: 'projects.index' }"
-            >Projets</RouterLink
+            >{{ t('nav.projects') }}</RouterLink
           >
         </li>
         <li>
           <RouterLink
             class="transition-all duration-300 hover:text-shadow-white hover:text-shadow-xs"
             :to="{ name: 'about' }"
-            >À propos</RouterLink
+            >{{ t('nav.about') }}</RouterLink
           >
         </li>
         <li>
           <RouterLink
             class="transition-all duration-300 hover:text-shadow-white hover:text-shadow-xs"
             :to="{ name: 'legal_notices' }"
-            >Mentions légales</RouterLink
+            >{{ t('nav.legal_notices') }}</RouterLink
           >
         </li>
       </ul>

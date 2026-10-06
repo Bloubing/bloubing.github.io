@@ -1,8 +1,28 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import NavLink from '@/components/NavLink.vue'
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 import WebsiteTitle from './WebsiteTitle.vue'
 import GitHubLogo from './GitHubLogo.vue'
+
+const { t } = useI18n({
+  messages: {
+    en: {
+      nav: {
+        projects: 'Projects',
+        about: 'About',
+        legal_notices: 'Legal notices'
+      }
+    },
+    fr: {
+      nav: {
+        projects: 'Projects',
+        about: 'À propos',
+        legal_notices: 'Mentions légales'
+      }
+    },
+  }
+})
 
 const showSidebar = ref(false)
 const windowWidth = ref(window.innerWidth)
@@ -69,12 +89,12 @@ onBeforeUnmount(() => {
           <li
             class="w-full p-6 px-15 transition duration-300 hover:bg-gray-800 hover:text-white md:w-auto md:p-0 md:hover:bg-transparent md:hover:text-base-content"
           >
-            <NavLink name="projects.index">Projets</NavLink>
+            <NavLink name="projects.index">{{ t('nav.projects') }}</NavLink>
           </li>
           <li
             class="w-full p-6 px-15 transition duration-300 hover:bg-gray-800 hover:text-white md:w-auto md:p-0 md:hover:bg-transparent md:hover:text-base-content"
           >
-            <NavLink name="about">À propos</NavLink>
+            <NavLink name="about">{{ t('nav.about') }}</NavLink>
           </li>
           <li
             class="md:hidden flex group w-full p-6 px-15 transition duration-300 hover:bg-gray-800 hover:text-white md:w-auto md:p-0 md:hover:bg-transparent md:hover:text-base-content"

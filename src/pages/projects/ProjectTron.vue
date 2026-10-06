@@ -1,19 +1,73 @@
 <script setup lang="ts">
+import { useI18n, Translation } from 'vue-i18n'
 import Heading from '@/components/Heading.vue'
 import Layout from '@/shared/DefaultLayout.vue'
 import GitHubLogo from '@/shared/GitHubLogo.vue'
+
+const { t } = useI18n({
+  messages: {
+    en: {
+      project_name: 'Tron Game ',
+      presentation: {
+        text: "A crossplatform version of {0}, the classic arcade game.",
+        project_name: "Tron"
+      },
+      links: {
+        github: "Source code"
+      },
+      why: {
+        heading: "Why?",
+        why_1: "- A group project for the 2nd year of my Master's degree.",
+        why_2: "- Learn about various technologies (NoSQL, WebSockets) in a fun way."
+      },
+       features: {
+        heading: "Features",
+        feature_1: '- Client–server architecture and WebSockets communication.',
+        feature_2: '- Crossplatform (playable both in the browser and on Android) with Cordova.',
+        feature_3: '- Lobby system, simultaneous games, player customisation and ranking.',
+        lobbies: "lobbies"
+      },
+
+    },
+    fr: {
+      project_name: 'Jeu TRON',
+      presentation: {
+        text: "Un {0}, grand classique des jeux d'arcades, en version multiplateforme.",
+        project_name: "jeu TRON"
+      },
+       links: {
+        github: "Code source"
+      },
+      why: {
+        heading: "Pourquoi ?",
+        why_1: "- Projet académique de M2, réalisé en groupe.",
+        why_2: "- Se familiariser avec plusieurs technologies (NoSQL, WebSockets) de façon ludique."
+      },
+      features: {
+        heading: "Fonctionnalités",
+        feature_1: '- Architecture client–serveur et communication via WebSockets.',
+        feature_2: '- Jeu multiplateforme (navigateur et Android) avec Cordova.',
+        feature_3: '- Système de {0}, parties jouables en parallèle, personnalisation des joueurs, et classement.',
+        lobbies: "lobbies",
+      },
+
+
+    },
+  }
+})
 </script>
 
 <template>
   <Layout back="/projects">
     <div class="mx-5 flex">
       <div class="mx-auto max-w-[50ch] space-y-5 sm:max-w-[65ch]">
-        <Heading>Jeu TRON</Heading>
-
+        <Heading>{{ t('project_name') }}</Heading>
         <p class="bg-primary p-5 border-2 border-base-content list-none">
-          Un <strong>jeu TRON</strong>, grand classique des jeux d'arcades, en version
-          multiplateforme.
+          <Translation keypath="presentation.text" tag="label" for="presentation.project_name">
+          <strong>{{ t('presentation.project_name') }}</strong>
+        </Translation>
         </p>
+        
         <ul class="flex flex-col space-y-4">
           <li>
             <a
@@ -22,29 +76,30 @@ import GitHubLogo from '@/shared/GitHubLogo.vue'
               class="text-blue-500 flex space-x-1 hover:underline"
             >
               <GitHubLogo />
-              <p>Code source</p>
+              <p>{{ t('links.github') }}</p>
             </a>
           </li>
         </ul>
 
         <section class="list-none space-y-3">
-          <h3 class="text-lg font-bold sm:text-xl">Pourquoi ?</h3>
+          <h3 class="text-lg font-bold sm:text-xl">{{t('why.heading')}}</h3>
           <ul class="space-y-3">
-            <li>- Projet académique de M2, réalisé en groupe.</li>
+            <li>{{t('why.why_1')}}</li>
             <li>
-              - Se familiariser avec plusieurs technologies (NoSQL, WebSockets) de façon ludique.
+              {{t('why.why_2')}}
             </li>
           </ul>
         </section>
 
         <section class="space-y-3">
-          <h3 class="text-lg font-bold sm:text-xl">Fonctionnalités</h3>
+          <h3 class="text-lg font-bold sm:text-xl">{{t('features.heading')}}</h3>
           <ul class="space-y-3">
-            <li>- Architecture client–serveur et communication via WebSockets.</li>
-            <li>- Jeu multiplateforme (navigateur et Android) avec Cordova.</li>
+            <li>{{t('why.why_1')}}</li>
+            <li>{{t('why.why_2')}}</li>
             <li>
-              - Système de <em>lobbies</em>, parties jouables en parallèles, personnalisation des
-              joueurs, et classement.
+              <Translation keypath="features.feature_3" tag="label" for="features.lobbies">
+              <em>{{ t('features.lobbies') }}</em>
+        </Translation>
             </li>
           </ul>
         </section>
