@@ -16,7 +16,7 @@ const { t } = useI18n({
       },
       self_hosting: {
         project_name: 'Self-hosting',
-        description: 'I host and manage a local server to enjoy multiple services.',
+        description: 'I host and manage a local server in order to use multiple services.',
       },
       recipes: {
         project_name: 'Recipes',
