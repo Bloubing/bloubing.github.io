@@ -47,8 +47,8 @@ const router = createRouter({
       component: AboutPage,
     },
     {
-      path: '/legal-notices',
-      name: 'legal_notices',
+      path: '/legal-notice',
+      name: 'legal_notice',
       meta: { title: 'Mentions légales' },
       component: LegalNoticesPage,
     },

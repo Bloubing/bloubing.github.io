@@ -1,4 +1,17 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n({
+  messages: {
+    en: {
+      back: 'Back',
+    },
+    fr: {
+      back: 'Retour',
+    },
+  },
+})
+
 defineProps({
   back: String,
 })
@@ -9,7 +22,7 @@ defineProps({
     <RouterLink
       :to="back"
       class="m-auto inline-block bg-gray-800 px-4 py-2 text-center text-sm font-bold text-white sm:text-lg"
-      >Retour</RouterLink
+      >{{ t('back') }}</RouterLink
     >
   </div>
 </template>

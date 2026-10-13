@@ -1,17 +1,71 @@
 <script setup lang="ts">
+import { useI18n, Translation } from 'vue-i18n'
 import Heading from '@/components/Heading.vue'
 import Layout from '@/shared/DefaultLayout.vue'
 import GitHubLogo from '@/shared/GitHubLogo.vue'
+
+const { t } = useI18n({
+  messages: {
+    en: {
+      project_name: 'Recipes',
+      presentation: {
+        text: '{0}, a Marmiton-like website where people can share their culinary creations.',
+        project_name: 'Tron',
+      },
+      links: {
+        github: 'Source code',
+      },
+      why: {
+        heading: 'Why?',
+        why_1: "- A project for the 1st year of my Master's degree, carried out in a group of 3.",
+        why_2: '- Develop a Web application from scratch with an MVC framework (Laravel).',
+      },
+      features: {
+        heading: 'Features',
+        feature_1: '- Complete recipe management, drafts, and favorites.',
+        feature_2: '- Rate, categorise and comment recipes.',
+        feature_3: '- Authentication with email verification or OAuth via GitHub.',
+        feature_4:
+          '- Administration and moderation interface for recipes and comments, based on user reports.',
+      },
+    },
+    fr: {
+      project_name: 'Recettes',
+      presentation: {
+        text: '{0}, un site façon Marmiton où partager ses créations culinaires !',
+      },
+      links: {
+        github: 'Code source',
+      },
+      why: {
+        heading: 'Pourquoi ?',
+        why_1: '- Projet académique de M1, réalisé en groupe de 3.',
+        why_2:
+          "- Développer une application Web de zéro avec un framework utlisant l'architecture MVC (Laravel).",
+      },
+      features: {
+        heading: 'Fonctionnalités',
+        feature_1: '- Gestion complète des recettes, brouillons et favoris.',
+        feature_2: '- Possibilité de noter, de catégoriser et de commenter les recettes.',
+        feature_3: "- Authentification avec vérification de l'e-mail ou OAuth via GitHub.",
+        feature_4:
+          "- Interface d'administration et de modération des recettes et des commentaires basée sur des signalements.",
+      },
+    },
+  },
+})
 </script>
 
 <template>
   <Layout back="/projects">
-    <template v-slot:heading>Recettes</template>
+    <template v-slot:heading>{{ t('project_name') }}</template>
     <div class="mx-5 flex">
       <div class="mx-auto max-w-[50ch] space-y-5 sm:max-w-[65ch]">
-        <Heading>Recettes</Heading>
+        <Heading>{{ t('project_name') }}</Heading>
         <p class="bg-primary p-5 border-2 border-base-content list-none">
-          <strong>Recettes</strong>, un site façon Marmiton où partager ses créations culinaires !
+          <Translation keypath="presentation.text" tag="label" for="project_name">
+            <strong>{{ t('project_name') }}</strong>
+          </Translation>
         </p>
         <ul class="flex flex-col space-y-4">
           <li>
@@ -21,28 +75,35 @@ import GitHubLogo from '@/shared/GitHubLogo.vue'
               class="text-blue-500 flex space-x-1 hover:underline"
             >
               <GitHubLogo />
-              <p>Code source</p>
+              <p>{{ t('links.github') }}</p>
             </a>
           </li>
         </ul>
 
         <section class="list-none space-y-3">
-          <h3 class="text-lg font-bold sm:text-xl">Pourquoi ?</h3>
+          <h3 class="text-lg font-bold sm:text-xl">{{ t('why.heading') }}</h3>
           <ul class="space-y-3">
-            <li>- Projet académique de M1, réalisé en groupe de 3.</li>
-            <li>- Développer une application Web de zéro avec un framework utlisant l'architecture MVC (Laravel).</li>
+            <li>{{ t('why.why_1') }}</li>
+            <li>
+              {{ t('why.why_2') }}
+            </li>
           </ul>
         </section>
 
         <section class="space-y-3">
-          <h3 class="text-lg font-bold sm:text-xl">Fonctionnalités</h3>
+          <h3 class="text-lg font-bold sm:text-xl">{{ t('features.heading') }}</h3>
           <ul class="space-y-3">
-            <li>- Gestion complète des recettes, brouillons et favoris.</li>
-            <li>- Possibilité de noter, de catégoriser et de commenter les recettes.</li>
-            <li>- Authentification avec vérification de l'e-mail ou OAuth via GitHub.</li>
             <li>
-              - Interface d'administration et de modération des recettes et des commentaires basée
-              sur des signalements.
+              {{ t('features.feature_1') }}
+            </li>
+            <li>
+              {{ t('features.feature_2') }}
+            </li>
+            <li>
+              {{ t('features.feature_3') }}
+            </li>
+            <li>
+              {{ t('features.feature_4') }}
             </li>
           </ul>
         </section>

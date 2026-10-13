@@ -11,7 +11,7 @@ const { t } = useI18n({
       nav: {
         projects: 'Projects',
         about: 'About',
-        legal_notices: 'Legal notices'
+        legal_notice: 'Legal notice'
       }
     },
     fr: {
@@ -21,7 +21,7 @@ const { t } = useI18n({
       nav: {
         projects: 'Projects',
         about: 'À propos',
-        legal_notices: 'Mentions légales'
+        legal_notice: 'Mentions légales'
       }
     },
   }
@@ -102,8 +102,8 @@ const { t } = useI18n({
         <li>
           <RouterLink
             class="transition-all duration-300 hover:text-shadow-white hover:text-shadow-xs"
-            :to="{ name: 'legal_notices' }"
-            >{{ t('nav.legal_notices') }}</RouterLink
+            :to="{ name: 'legal_notice' }"
+            >{{ t('nav.legal_notice') }}</RouterLink
           >
         </li>
       </ul>
