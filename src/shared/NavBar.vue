@@ -11,17 +11,21 @@ const { t } = useI18n({
       nav: {
         projects: 'Projects',
         about: 'About',
-        legal_notices: 'Legal notices'
-      }
+      },
     },
     fr: {
       nav: {
         projects: 'Projects',
         about: 'À propos',
-        legal_notices: 'Mentions légales'
-      }
+      },
     },
-  }
+    es: {
+      nav: {
+        projects: 'Proyectos',
+        about: 'Sobre mí',
+      },
+    },
+  },
 })
 
 const showSidebar = ref(false)

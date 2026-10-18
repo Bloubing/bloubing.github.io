@@ -5,26 +5,39 @@ import GitHubLogo from './GitHubLogo.vue'
 const { t } = useI18n({
   messages: {
     en: {
-      heading: 'Let\'s get in touch!',
-      contact_text: "Any project or question in mind? I'd love to hear about and I'm open to new opportunities.",
+      heading: "Let's get in touch!",
+      contact_text:
+        "Any project or question in mind? I'd love to hear about and I'm open to new opportunities.",
       email: 'Email me',
       nav: {
         projects: 'Projects',
         about: 'About',
-        legal_notice: 'Legal notice'
-      }
+        legal_notice: 'Legal notice',
+      },
     },
     fr: {
       heading: 'Contactez-moi !',
-      contact_text: "Un projet qui pourrait m'intéresser ou une question ? Je suis ouvert à de nouvelles opportunités et je serais ravi d'en discuter avec vous !",
+      contact_text:
+        "Un projet qui pourrait m'intéresser ou une question ? Je suis ouvert à de nouvelles opportunités et je serais ravi d'en discuter avec vous !",
       email: 'Écrire un e-mail',
       nav: {
         projects: 'Projects',
         about: 'À propos',
-        legal_notice: 'Mentions légales'
-      }
+        legal_notice: 'Mentions légales',
+      },
     },
-  }
+    es: {
+      heading: '¡Escríbeme!',
+      contact_text:
+        '¿Algún proyecto que pueda interesarme o alguna pregunta? ¡Estoy abierto a nuevas oportunidades y me encantaría hablar contigo!',
+      email: 'Enviar un e-mail',
+      nav: {
+        projects: 'Proyectos',
+        about: 'Sobre mí',
+        legal_notice: 'Aviso legal',
+      },
+    },
+  },
 })
 </script>
 

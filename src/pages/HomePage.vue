@@ -89,6 +89,48 @@ const { t } = useI18n({
         },
       },
     },
+    es: {
+      description: 'Desarrollador Web al que le gustan los idiomas',
+      projects: 'Mis proyectos',
+      experience: {
+        text: 'Experiencias profesionales',
+        experience_1: {
+          title: 'Desarrollador Web full stack - práctica',
+          date: 'feb. 2026 - jul. 2026',
+          feature_1:
+            '- Rediseño del área de clientes de una empresa especializada en seguros para médicos con Angular (Typescript) y Django (Python).',
+          feature_2:
+            '- Funciones full stack : gestión de contratos, presupuestos, documentos, modo "supervista", sistema de recomendación y de satisfacción, pago de recibos.',
+          feature_3:
+            '- Integración API con diversos servicios internos y externos, diseño de API REST con documentación Swagger.',
+          feature_4:
+            '-  Optimizaciones PostgreSQL e integración masiva de datos (más de 4 millones de líneas).',
+          feature_5: '- Metodología en cascada y metodología ágil.',
+        },
+        experience_2: {
+          title: 'Desarrollador Laravel - práctica',
+          date: 'jul. 2025 - sept. 2025',
+          feature_1: '- Desarrollo Laravel (PHP) para un sistema de gestión de propiedades (PMS).',
+          feature_2:
+            '- Funciones full stack : almacenamiento de documentos de identidad, expiración de los enlaces a las guías digitales.',
+          feature_3: '- Traduccion inglés-francés del back office.',
+          feature_4: '- Metodología ágil.',
+        },
+      },
+      work: {
+        text: 'Selección de proyectos',
+        tron: {
+          project_name: 'Juego Tron',
+          description:
+            'El juego Tron, un gran clásico de los videojuegos arcade, en versión multiplataforma.',
+        },
+        self_hosting: {
+          project_name: 'Autoalojamiento',
+          description:
+            'Alojo y administro un servidor local para disfrutar de múltiples servicios.',
+        },
+      },
+    },
   },
 })
 </script>
