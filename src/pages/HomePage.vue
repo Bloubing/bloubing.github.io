@@ -122,7 +122,7 @@ const { t } = useI18n({
         tron: {
           project_name: 'Juego Tron',
           description:
-            'El juego Tron, un gran clásico de los videojuegos arcade, en versión multiplataforma.',
+            'Una versión multiplataforma del juego Tron, el gran clásico de los videojuegos arcade.',
         },
         self_hosting: {
           project_name: 'Autoalojamiento',

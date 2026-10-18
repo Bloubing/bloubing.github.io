@@ -9,6 +9,9 @@ const { t } = useI18n({
     fr: {
       back: 'Retour',
     },
+    es: {
+      back: 'Volver',
+    },
   },
 })
 

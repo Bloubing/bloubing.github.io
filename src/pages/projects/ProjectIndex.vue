@@ -40,6 +40,24 @@ const { t } = useI18n({
         description: 'Un site façon Marmiton où partager ses créations culinaires !',
       },
     },
+    es: {
+      heading: 'Proyectos',
+      click_message: '¡Haz clic en uno de los proyectos!',
+      tron: {
+        project_name: 'Juego Tron',
+        description:
+          'Una versión multiplataforma del juego Tron, el gran clásico de los videojuegos arcade.',
+      },
+      self_hosting: {
+        project_name: 'Autoalojamiento',
+        description: 'Alojo y administro un servidor local para disfrutar de múltiples servicios.',
+      },
+      recipes: {
+        project_name: 'Recetas',
+        description:
+          'Una página web como Marmiton donde la gente puede compartir sus creaciones culinarias.',
+      },
+    },
   },
 })
 </script>
