@@ -10,7 +10,7 @@ const { t } = useI18n({
       project_name: 'Recipes',
       presentation: {
         text: '{0}, a Marmiton-like website where people can share their culinary creations.',
-        project_name: 'Tron',
+        project_name: 'Recipes',
       },
       links: {
         github: 'Source code',
@@ -50,6 +50,29 @@ const { t } = useI18n({
         feature_3: "- Authentification avec vérification de l'e-mail ou OAuth via GitHub.",
         feature_4:
           "- Interface d'administration et de modération des recettes et des commentaires basée sur des signalements.",
+      },
+    },
+    es: {
+      project_name: 'Recetas',
+      presentation: {
+        text: '{0} es una página web como Marmiton donde la gente puede compartir sus creaciones culinarias.',
+        project_name: 'Tron',
+      },
+      links: {
+        github: 'Código fuente',
+      },
+      why: {
+        heading: '¿Por qué?',
+        why_1: "- A project for the 1st year of my Master's degree, carried out in a group of 3.",
+        why_2: '- Develop a Web application from scratch with an MVC framework (Laravel).',
+      },
+      features: {
+        heading: 'Funciones',
+        feature_1: '- Complete recipe management, drafts, and favorites.',
+        feature_2: '- Rate, categorise and comment recipes.',
+        feature_3: '- Authentication with email verification or OAuth via GitHub.',
+        feature_4:
+          '- Administration and moderation interface for recipes and comments, based on user reports.',
       },
     },
   },

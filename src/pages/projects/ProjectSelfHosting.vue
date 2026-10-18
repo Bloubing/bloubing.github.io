@@ -50,6 +50,29 @@ const { t } = useI18n({
           " - Sécurisation de l'accès distant avec le VPN Tailscale pour éviter toute exposition de ports sur Internet.",
       },
     },
+    es: {
+      project_name: 'Autoalojamiento',
+      presentation:
+        'Alojo y administro un servidor local (Ubuntu Server) para utilizar servicios como Immich y Pi-Hole.',
+      links: {
+        github: 'Código fuente',
+      },
+      why: {
+        heading: '¿Por qué?',
+        why_1: '- Avoir un meilleur de contrôle sur ma vie privée et mes données.',
+        why_2:
+          "- Me passer de Google Photos grâce à Immich, l'alternative sans abonnement et avec plus de stockage.",
+        why_3: '- Bloquer les publicités au niveau du réseau avec le filtrage DNS de Pi-Hole.',
+        why_4: "- Et bien sûr, goûter aux plaisirs de l'administration systèmes !",
+      },
+      features: {
+        heading: 'Funciones',
+        feature_1: '- Isolation de chaque service dans des conteneurs Docker.',
+        feature_2: '- Supervision du serveur avec Bezsel et des conteneurs Docker avec Dockhand.',
+        feature_3:
+          " - Sécurisation de l'accès distant avec le VPN Tailscale pour éviter toute exposition de ports sur Internet.",
+      },
+    },
   },
 })
 </script>
