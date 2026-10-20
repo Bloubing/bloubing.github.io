@@ -63,16 +63,16 @@ const { t } = useI18n({
       },
       why: {
         heading: '¿Por qué?',
-        why_1: "- A project for the 1st year of my Master's degree, carried out in a group of 3.",
-        why_2: '- Develop a Web application from scratch with an MVC framework (Laravel).',
+        why_1: '- Proyecto académico de máster 2 en grupo de 3.',
+        why_2: '- Desarrollar una aplicación Web desde cero con un framework MVC (Laravel).',
       },
       features: {
         heading: 'Funciones',
-        feature_1: '- Complete recipe management, drafts, and favorites.',
-        feature_2: '- Rate, categorise and comment recipes.',
-        feature_3: '- Authentication with email verification or OAuth via GitHub.',
+        feature_1: '-  Gestión completa de recetas, borradores y favoritos.',
+        feature_2: '- Calificar, clasificar y comentar recetas.',
+        feature_3: '- Autenticación con una verificación por e-mail u OAuth con GitHub.',
         feature_4:
-          '- Administration and moderation interface for recipes and comments, based on user reports.',
+          '-  Interfaz de administración y moderación de recetas y comentarios, usando las denuncias de los usuarios.',
       },
     },
   },
