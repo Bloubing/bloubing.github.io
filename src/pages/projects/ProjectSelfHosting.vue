@@ -59,18 +59,19 @@ const { t } = useI18n({
       },
       why: {
         heading: '¿Por qué?',
-        why_1: '- Avoir un meilleur de contrôle sur ma vie privée et mes données.',
+        why_1: '- Tener una mayor privacidad y tener control sobre mis datos.',
         why_2:
-          "- Me passer de Google Photos grâce à Immich, l'alternative sans abonnement et avec plus de stockage.",
-        why_3: '- Bloquer les publicités au niveau du réseau avec le filtrage DNS de Pi-Hole.',
-        why_4: "- Et bien sûr, goûter aux plaisirs de l'administration systèmes !",
+          '- Prescindir de Google Fotos gracias a Immich, una alternativa sin suscripción y con más espacio de almacenamiento.',
+        why_3: '- Bloquear la publicidad a nivel de red con el filtrado DNS de Pi-Hole.',
+        why_4: '- ¡Y obviamente disfrutar de la administración de sistemas!',
       },
       features: {
         heading: 'Funciones',
-        feature_1: '- Isolation de chaque service dans des conteneurs Docker.',
-        feature_2: '- Supervision du serveur avec Bezsel et des conteneurs Docker avec Dockhand.',
+        feature_1: '- Aislamiento de cada servicio en contenedores Docker.',
+        feature_2:
+          '- Monitorización del servidor con Bezsel y de los contenedores Docker con Dockhand.',
         feature_3:
-          " - Sécurisation de l'accès distant avec le VPN Tailscale pour éviter toute exposition de ports sur Internet.",
+          ' - Segurización del acceso remoto con la VPN Tailscale para evitar exponer puertos en Internet.',
       },
     },
   },

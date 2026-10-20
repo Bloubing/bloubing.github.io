@@ -63,17 +63,16 @@ const { t } = useI18n({
       },
       why: {
         heading: '¿Por qué?',
-        why_1: '- Projet académique de M2, réalisé en groupe.',
-        why_2:
-          '- Se familiariser avec plusieurs technologies (NoSQL, WebSockets) de façon ludique.',
+        why_1: '- Proyecto académico de máster 2 en grupo.',
+        why_2: '- Familiarizarse con varias tecnologías (NoSQL, WebSockets) de forma lúdica.',
       },
       features: {
         heading: 'Funciones',
-        feature_1: '- Architecture client–serveur et communication via WebSockets.',
-        feature_2: '- Jeu multiplateforme (navigateur et Android) avec Cordova.',
+        feature_1: '- Arquitectura cliente-servidor y comunicación por WebSockets.',
+        feature_2: '- Juego multiplataforma (navegador y Android) con Cordova.',
         feature_3:
-          '- Système de {0}, parties jouables en parallèle, personnalisation des joueurs, et classement.',
-        lobbies: 'lobbies',
+          '- Systema de salas, partidas que se pueden jugar en paralelo, personalización de los jugadores y clasificación.',
+        lobbies: 'salas',
       },
     },
   },
