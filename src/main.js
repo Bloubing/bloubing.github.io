@@ -7,8 +7,8 @@ import { createI18n } from 'vue-i18n'
 
 const i18n = createI18n({
   legacy: false,
-  locale: 'es',
-  fallbackLocale: 'fr',
+  locale: 'fr',
+  fallbackLocale: 'en',
 })
 
 const app = createApp(App)
