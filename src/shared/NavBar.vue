@@ -5,6 +5,12 @@ import { onBeforeUnmount, onMounted, ref } from 'vue'
 import WebsiteTitle from './WebsiteTitle.vue'
 import GitHubLogo from './GitHubLogo.vue'
 
+const LOCALE_TO_LANGUAGES: Record<string, string> = {
+  fr: 'Français',
+  en: 'English',
+  es: 'Español',
+}
+
 const { t } = useI18n({
   messages: {
     en: {
@@ -100,6 +106,7 @@ onBeforeUnmount(() => {
           >
             <NavLink name="about">{{ t('nav.about') }}</NavLink>
           </li>
+
           <li
             class="md:hidden flex group w-full p-6 px-15 transition duration-300 hover:bg-gray-800 hover:text-white md:w-auto md:p-0 md:hover:bg-transparent md:hover:text-base-content"
           >
@@ -110,22 +117,34 @@ onBeforeUnmount(() => {
           </li>
         </ul>
       </div>
-      <div class="flex items-center">
+      <div class="flex items-center space-x-5">
+        <div class="locale-changer">
+          <select class="select" v-model="$i18n.locale">
+            <option
+              v-for="locale in $i18n.availableLocales"
+              :key="`locale-${locale}`"
+              :value="locale"
+            >
+              {{ LOCALE_TO_LANGUAGES[locale] }}
+            </option>
+          </select>
+        </div>
+
         <a href="https://github.com/Bloubing/" target="_blank" class="hidden md:flex">
           <GitHubLogo />
         </a>
-      </div>
 
-      <div
-        aria-label="open-sidebar"
-        :aria-expanded="showSidebar"
-        aria-controls="navbar"
-        @click="toggleSidebar"
-        class="flex cursor-pointer flex-col space-y-1.5 md:hidden"
-      >
-        <span class="w-6 border-t-2 border-gray-800"></span>
-        <span class="w-6 border-t-2 border-gray-800"></span>
-        <span class="w-6 border-t-2 border-gray-800"></span>
+        <div
+          aria-label="open-sidebar"
+          :aria-expanded="showSidebar"
+          aria-controls="navbar"
+          @click="toggleSidebar"
+          class="flex cursor-pointer flex-col space-y-1.5 md:hidden"
+        >
+          <span class="w-6 border-t-2 border-gray-800"></span>
+          <span class="w-6 border-t-2 border-gray-800"></span>
+          <span class="w-6 border-t-2 border-gray-800"></span>
+        </div>
       </div>
     </nav>
 
