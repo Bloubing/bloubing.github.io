@@ -34,6 +34,8 @@ const { t } = useI18n({
   },
 })
 
+const navigatorLanguage = navigator.language
+
 const showSidebar = ref(false)
 const windowWidth = ref(window.innerWidth)
 
@@ -119,11 +121,12 @@ onBeforeUnmount(() => {
       </div>
       <div class="flex items-center space-x-5">
         <div class="locale-changer">
-          <select class="select" v-model="$i18n.locale">
+          <select class="select rounded-none border-1 border-gray-800" v-model="$i18n.locale">
             <option
               v-for="locale in $i18n.availableLocales"
               :key="`locale-${locale}`"
               :value="locale"
+              :selected="locale === navigatorLanguage"
             >
               {{ LOCALE_TO_LANGUAGES[locale] }}
             </option>
