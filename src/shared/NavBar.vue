@@ -121,7 +121,10 @@ onBeforeUnmount(() => {
       </div>
       <div class="flex items-center space-x-5">
         <div class="locale-changer">
-          <select class="select rounded-none border-1 border-gray-800" v-model="$i18n.locale">
+          <select
+            class="select rounded-none border-2 border-gray-800 cursor-pointer"
+            v-model="$i18n.locale"
+          >
             <option
               v-for="locale in $i18n.availableLocales"
               :key="`locale-${locale}`"
