@@ -21,7 +21,7 @@ const { t } = useI18n({
 <template>
   <div
     @click="$router.back()"
-    class="m-5 text-sm sm:text-lg mt-20 flex cursor-pointer items-center space-x-2 hover:underline group"
+    class="m-5 mt-20 flex cursor-pointer items-center space-x-2 hover:underline group"
   >
     <FontAwesomeIcon
       :icon="faArrowLeft"
