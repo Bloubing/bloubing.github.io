@@ -136,7 +136,7 @@ const { t } = useI18n({
 </script>
 
 <template>
-  <Layout>
+  <Layout :hide-back-button="true">
     <section aria-label="introduction" class="px-4 py-20 text-base-content sm:px-8 md:py-32">
       <h1 class="text-center text-4xl font-bold sm:text-5xl md:text-6xl lg:text-6xl">Bloubing</h1>
       <div class="mx-auto flex max-w-3xl flex-col items-center text-center">

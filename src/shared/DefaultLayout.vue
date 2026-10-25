@@ -7,6 +7,10 @@ import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 import { throttle } from 'lodash'
 
+defineProps({
+  hideBackButton: Boolean,
+})
+
 let isActive = ref(false)
 const THROTTLE_MS = 250
 
@@ -36,7 +40,7 @@ function scrollToTop() {
 
     <main class="text-sm sm:mx-40 sm:text-base">
       <div class="mx-auto max-w-[50ch] space-y-5 sm:max-w-[65ch]">
-        <BackButton />
+        <BackButton v-show="!hideBackButton" />
 
         <slot />
       </div>
