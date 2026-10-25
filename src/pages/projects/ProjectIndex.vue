@@ -63,28 +63,24 @@ const { t } = useI18n({
 </script>
 
 <template>
-  <Layout back="/">
-    <div class="mx-5 flex">
-      <div class="mx-auto max-w-[50ch] sm:max-w-[65ch]">
-        <Heading>{{ t('heading') }}</Heading>
-        <p class="mb-5">{{ t('click_message') }}</p>
-        <ul class="space-y-3">
-          <ProjectCard name="projects.tron">
-            <template v-slot:title>{{ t('tron.project_name') }}</template>
-            {{ t('tron.description') }}
-          </ProjectCard>
-          <ProjectCard name="projects.self_hosting">
-            <template v-slot:title>{{ t('self_hosting.project_name') }}</template>
-            {{ t('self_hosting.description') }}
-          </ProjectCard>
-          <ProjectCard name="projects.recipes">
-            <template v-slot:title>
-              {{ t('recipes.project_name') }}
-            </template>
-            {{ t('recipes.description') }}
-          </ProjectCard>
-        </ul>
-      </div>
-    </div>
+  <Layout>
+    <Heading>{{ t('heading') }}</Heading>
+    <p class="mb-5">{{ t('click_message') }}</p>
+    <ul class="space-y-3">
+      <ProjectCard name="projects.tron">
+        <template v-slot:title>{{ t('tron.project_name') }}</template>
+        {{ t('tron.description') }}
+      </ProjectCard>
+      <ProjectCard name="projects.self_hosting">
+        <template v-slot:title>{{ t('self_hosting.project_name') }}</template>
+        {{ t('self_hosting.description') }}
+      </ProjectCard>
+      <ProjectCard name="projects.recipes">
+        <template v-slot:title>
+          {{ t('recipes.project_name') }}
+        </template>
+        {{ t('recipes.description') }}
+      </ProjectCard>
+    </ul>
   </Layout>
 </template>

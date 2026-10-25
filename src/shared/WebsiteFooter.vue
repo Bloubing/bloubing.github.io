@@ -21,7 +21,7 @@ const { t } = useI18n({
         "Un projet qui pourrait m'intéresser ou une question ? Je suis ouvert à de nouvelles opportunités et je serais ravi d'en discuter avec vous !",
       email: 'Écrire un e-mail',
       nav: {
-        projects: 'Projects',
+        projects: 'Projets',
         about: 'À propos',
         legal_notice: 'Mentions légales',
       },

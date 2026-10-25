@@ -7,10 +7,6 @@ import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 import { throttle } from 'lodash'
 
-defineProps({
-  back: String,
-})
-
 let isActive = ref(false)
 const THROTTLE_MS = 250
 
@@ -27,12 +23,11 @@ onBeforeUnmount(() => window.removeEventListener('scroll', checkNeedBackToTop))
 
 function scrollToTop() {
   if (!isActive.value) {
-    return;
+    return
   }
 
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+  window.scrollTo({ top: 0, behavior: 'smooth' })
 }
-
 </script>
 
 <template>
@@ -40,6 +35,12 @@ function scrollToTop() {
     <NavBar />
 
     <main class="text-sm sm:mx-40 sm:text-base">
+      <div class="mx-auto max-w-[50ch] space-y-5 sm:max-w-[65ch]">
+        <BackButton />
+
+        <slot />
+      </div>
+
       <button
         class="btn btn-primary fixed bottom-5 right-5 z-2 border-2 border-base-content rounded-none transition duration-100 shadow-none"
         :class="[isActive ? 'scale-100' : 'scale-0']"
@@ -47,10 +48,8 @@ function scrollToTop() {
       >
         <FontAwesomeIcon :icon="faArrowUp" />
       </button>
-      <slot />
     </main>
 
-    <BackButton :back v-if="back" />
     <WebsiteFooter />
   </div>
 </template>

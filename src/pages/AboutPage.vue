@@ -59,34 +59,30 @@ const { t } = useI18n({
 </script>
 
 <template>
-  <Layout back="/">
-    <div class="mx-5 flex">
-      <div class="mx-auto max-w-[50ch] space-y-5 sm:max-w-[65ch]">
-        <Heading>{{ t('heading') }}</Heading>
-        <h3 class="text-lg font-bold sm:text-xl">
-          {{ t('in_short.title') }}
-        </h3>
-        <p>
-          {{ t('in_short.text_1') }}
-        </p>
-        <p>
-          {{ t('in_short.text_2') }}
-        </p>
+  <Layout>
+    <Heading>{{ t('heading') }}</Heading>
+    <h3 class="text-lg font-bold sm:text-xl">
+      {{ t('in_short.title') }}
+    </h3>
+    <p>
+      {{ t('in_short.text_1') }}
+    </p>
+    <p>
+      {{ t('in_short.text_2') }}
+    </p>
 
-        <h3 class="text-lg font-bold sm:text-xl">
-          {{ t('what_else.title') }}
-        </h3>
-        <p>
-          {{ t('what_else.text') }}
-        </p>
+    <h3 class="text-lg font-bold sm:text-xl">
+      {{ t('what_else.title') }}
+    </h3>
+    <p>
+      {{ t('what_else.text') }}
+    </p>
 
-        <h3 class="text-lg font-bold sm:text-xl">
-          {{ t('opportunity_question.title') }}
-        </h3>
-        <p>
-          {{ t('opportunity_question.text') }}
-        </p>
-      </div>
-    </div>
+    <h3 class="text-lg font-bold sm:text-xl">
+      {{ t('opportunity_question.title') }}
+    </h3>
+    <p>
+      {{ t('opportunity_question.text') }}
+    </p>
   </Layout>
 </template>

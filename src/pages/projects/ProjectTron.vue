@@ -80,59 +80,55 @@ const { t } = useI18n({
 </script>
 
 <template>
-  <Layout back="/projects">
-    <div class="mx-5 flex">
-      <div class="mx-auto max-w-[50ch] space-y-5 sm:max-w-[65ch]">
-        <Heading>{{ t('project_name') }}</Heading>
-        <p class="bg-primary p-5 border-2 border-base-content list-none">
-          <Translation keypath="presentation.text" tag="label" for="presentation.project_name">
-            <strong>{{ t('presentation.project_name') }}</strong>
+  <Layout>
+    <Heading>{{ t('project_name') }}</Heading>
+    <p class="bg-primary p-5 border-2 border-base-content list-none">
+      <Translation keypath="presentation.text" tag="label" for="presentation.project_name">
+        <strong>{{ t('presentation.project_name') }}</strong>
+      </Translation>
+    </p>
+
+    <ul class="flex flex-col space-y-4">
+      <li>
+        <a
+          target="_blank"
+          href="https://github.com/Bloubing/M2-TRON"
+          class="text-blue-500 flex space-x-1 hover:underline"
+        >
+          <GitHubLogo />
+          <p>{{ t('links.github') }}</p>
+        </a>
+      </li>
+    </ul>
+
+    <section class="list-none space-y-3">
+      <h3 class="text-lg font-bold sm:text-xl">{{ t('why.heading') }}</h3>
+      <ul class="space-y-3">
+        <li>{{ t('why.why_1') }}</li>
+        <li>
+          {{ t('why.why_2') }}
+        </li>
+      </ul>
+    </section>
+
+    <section class="space-y-3">
+      <h3 class="text-lg font-bold sm:text-xl">{{ t('features.heading') }}</h3>
+      <ul class="space-y-3">
+        <li>{{ t('features.feature_1') }}</li>
+        <li>{{ t('features.feature_2') }}</li>
+        <li>
+          <Translation keypath="features.feature_3" tag="label" for="features.lobbies">
+            <em>{{ t('features.lobbies') }}</em>
           </Translation>
-        </p>
+        </li>
+      </ul>
+    </section>
 
-        <ul class="flex flex-col space-y-4">
-          <li>
-            <a
-              target="_blank"
-              href="https://github.com/Bloubing/M2-TRON"
-              class="text-blue-500 flex space-x-1 hover:underline"
-            >
-              <GitHubLogo />
-              <p>{{ t('links.github') }}</p>
-            </a>
-          </li>
-        </ul>
-
-        <section class="list-none space-y-3">
-          <h3 class="text-lg font-bold sm:text-xl">{{ t('why.heading') }}</h3>
-          <ul class="space-y-3">
-            <li>{{ t('why.why_1') }}</li>
-            <li>
-              {{ t('why.why_2') }}
-            </li>
-          </ul>
-        </section>
-
-        <section class="space-y-3">
-          <h3 class="text-lg font-bold sm:text-xl">{{ t('features.heading') }}</h3>
-          <ul class="space-y-3">
-            <li>{{ t('features.feature_1') }}</li>
-            <li>{{ t('features.feature_2') }}</li>
-            <li>
-              <Translation keypath="features.feature_3" tag="label" for="features.lobbies">
-                <em>{{ t('features.lobbies') }}</em>
-              </Translation>
-            </li>
-          </ul>
-        </section>
-
-        <section class="flex flex-wrap gap-1">
-          <span class="badge badge-neutral">Node.js</span>
-          <span class="badge badge-neutral">Cordova</span>
-          <span class="badge badge-neutral">MongoDB</span>
-          <span class="badge badge-neutral">WebSocket</span>
-        </section>
-      </div>
-    </div>
+    <section class="flex flex-wrap gap-1">
+      <span class="badge badge-neutral">Node.js</span>
+      <span class="badge badge-neutral">Cordova</span>
+      <span class="badge badge-neutral">MongoDB</span>
+      <span class="badge badge-neutral">WebSocket</span>
+    </section>
   </Layout>
 </template>

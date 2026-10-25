@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
 const { t } = useI18n({
   messages: {
@@ -14,18 +16,19 @@ const { t } = useI18n({
     },
   },
 })
-
-defineProps({
-  back: String,
-})
 </script>
 
 <template>
-  <div class="mt-20 flex">
-    <RouterLink
-      :to="back"
-      class="m-auto inline-block bg-gray-800 px-4 py-2 text-center text-sm font-bold text-white sm:text-lg"
-      >{{ t('back') }}</RouterLink
-    >
+  <div
+    @click="$router.back()"
+    class="m-5 text-sm sm:text-lg mt-20 flex cursor-pointer items-center space-x-2 hover:underline group"
+  >
+    <FontAwesomeIcon
+      :icon="faArrowLeft"
+      class="group-hover:-translate-x-1 duration-300 transition"
+    />
+    <p>
+      {{ t('back') }}
+    </p>
   </div>
 </template>
